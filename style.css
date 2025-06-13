@@ -185,3 +185,25 @@ a {
 .volver:hover {
     background-color: #3e7c65
 }
+
+/* Boton volver arriba */
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll-top img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
