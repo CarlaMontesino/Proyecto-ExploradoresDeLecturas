@@ -1,0 +1,187 @@
+/* Página de Inicio y generalidades */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ffd97d;
+    color: #4b2e2e;
+}
+
+header {
+    background-color: #e9e4c9;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header a {
+    color: #2d5948;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.hero img {
+    max-width: 400px;
+}
+
+.hero h1 {
+    color: #2d5948;
+    font-size: 3rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #4b2e2e;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.botones a {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.jugar {
+    background-color: #da5c2b;
+}
+
+.conocer {
+    background-color: #c5a45a;
+    color: #2d2d2d;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    .botones a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: #e9e4c9;
+    text-align: center;
+}
+
+footer a {
+    color: #4b2e2e;
+}
+
+/* Página del juego */
+
+.juego-container {
+    background-color: ffd97d;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.lumi-img {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.frase {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d5948;
+    margin-bottom: 1.5rem;
+}
+
+.boton-opcion {
+    background-color: #da5c2b;
+    border: 2px solid #2d5948;
+    color: #2d5948;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.boton-opcion:hover {
+    background-color: #a9c9d0;
+    color: #2d2d2d;
+}
+
+.feedback {
+    margin-top: 1.5rem;
+    font-size: italic;
+    background-color: #2d5948;
+    padding: 1rem;
+    border-left: 5px solid #2d5948;
+    border-radius: 10px;
+    display: none;
+}
+
+/* Página Docentes */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+   border-radius: 20px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+
+h1, h2 {
+    color: #2d5948;
+     text-align: center;
+    padding: 3rem 2rem;
+
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.recurso {
+    background-color: #ffd97d;
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+a {
+    color: #2d5948;
+    text-decoration: underline;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #2d5948;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.volver:hover {
+    background-color: #3e7c65
+}

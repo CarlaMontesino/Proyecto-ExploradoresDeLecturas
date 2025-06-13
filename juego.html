@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego de Exploradores de Lecturas</title>
+</head>
+<body>
+    
+    <main class="juego-container">
+
+        <img src="IMG/Lumi.png" alt="Lumi te invita a jugar" class="lumi-img">
+
+        <div class="frase">
+            "Lo esencial es invisible a los ojos"
+        </div>
+
+        <button class="boton-opcion" onclick="mostrarFeedBack(1)"> Que lo más importante no siempre se puede ver</button>
+        <button class="boton-opcion" onclick="mostrarFeedBack(2)"> Que hay que mirar todo con lupa</button>
+        
+        <div id="feedback" class="feeback"></div>
+    </main>
+
+    <script>
+        function mostrarFeedback(opcion) {
+    const feedback = document.getElementById('feedback');
+    if (opcion === 1) {
+        feedback.innerText = '¡Exacto! A veces lo más valioso no se ve, pero se siente';
+    } else {
+        feedback.innerText = '¡Ji, ji, ji! Tal vez no con lupa, pero sí con el corazón';
+    }
+    feedback.style.display = 'block';
+}
+    </script>
+
+</body>
+</html>
