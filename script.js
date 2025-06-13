@@ -1,3 +1,5 @@
+/* Página del juego - muestra */
+
 function mostrarFeedback(opcion) {
     const feedback = document.getElementById('feedback');
     if (opcion === 1) {
@@ -13,3 +15,4 @@ function mostrarFeedback(opcion) {
   function toggleContenido(caja) {
     caja.classList.toggle('activa');
   }
+

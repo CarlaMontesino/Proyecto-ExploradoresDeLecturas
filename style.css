@@ -222,3 +222,36 @@ a {
 .lumiazul img {
     max-width: 400px;
 }
+
+/* Página ¿Cómo jugar? */
+
+.dialogo-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.dialogo-lumi {
+    flex: 1;
+    background-color: #fff8d0;
+    border-left: 5px solid #2d5948;
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    position: relative;
+    min-width: 250px;
+}
+.dialogo-lumi::before {
+    content: "\201C";
+    font-size: 3rem;
+    color: #c5a45a;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+

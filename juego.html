@@ -7,6 +7,14 @@
     <title>Juego de Exploradores de Lecturas</title>
 </head>
 <body>
+
+    <header>
+        <a href="index.html">Inicio</a>
+        <a href="QueEs.html">¿Qué es?</a>
+        <a href="comoJugar.html">¿Cómo jugar?</a>
+        <a href="docentes.html">Docentes</a>
+        <a href="#">Accesibilidad</a>
+    </header>
     
     <main class="juego-container">
 
@@ -16,23 +24,15 @@
             "Lo esencial es invisible a los ojos"
         </div>
 
+         <div id="feedback" class="feeback">
         <button class="boton-opcion" onclick="mostrarFeedBack(1)"> Que lo más importante no siempre se puede ver</button>
         <button class="boton-opcion" onclick="mostrarFeedBack(2)"> Que hay que mirar todo con lupa</button>
-        
-        <div id="feedback" class="feeback"></div>
+        </div>
     </main>
 
-    <script>
-        function mostrarFeedback(opcion) {
-    const feedback = document.getElementById('feedback');
-    if (opcion === 1) {
-        feedback.innerText = '¡Exacto! A veces lo más valioso no se ve, pero se siente';
-    } else {
-        feedback.innerText = '¡Ji, ji, ji! Tal vez no con lupa, pero sí con el corazón';
-    }
-    feedback.style.display = 'block';
-}
-    </script>
+
+    <script src="script.js"> </script>
+    
 
 </body>
 </html>
