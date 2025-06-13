@@ -7,3 +7,9 @@ function mostrarFeedback(opcion) {
     }
     feedback.style.display = 'block';
 }
+
+/* Página docentes, para que las cajas brinden la información de la actividad */
+
+  function toggleContenido(caja) {
+    caja.classList.toggle('activa');
+  }

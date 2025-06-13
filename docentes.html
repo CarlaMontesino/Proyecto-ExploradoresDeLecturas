@@ -7,6 +7,9 @@
     <title>Exploradores de Lecturas - Para docentes</title>
 </head>
 <body>
+
+    <a href="#" class="scroll-top"> 
+        <img src="IMG/Lumi.png" alt="Volvamos arriba"> </a> 
     
      <header>
         <a href="index.html">Inicio </a>
@@ -49,27 +52,38 @@
 
         <h2>Actividades sugeridas</h2>
 
-        <div class=recurso>
-            <strong>Diario de Exploradores:</strong> después del juego, que cada estudiante escriba cómo se sintió, qué frase le hizo pensar más y por qué.
+        <div class=caja onclick="toggleContenido(this)">
+            <div class="titulo"> <strong> 📓 Diario de Exploradores </strong> </div> 
+            <div class="contenido">
+             Después del juego, que cada estudiante escriba cómo se sintió, qué frase le hizo pensar más y por qué.
+                </div>
         </div>
-        <div class="recurso">
-            <strong>Rol literario:</strong> dramatizar una frase como si fueran los personajes del juego.
+
+        <div class="caja" onclick="toggleContenido(this)">
+            <div class="titulo"> <strong> 🎭 Rol literario </strong> </div>
+            <div class="contenido">
+                Dramatizar una frase como si fueran los personajes del juego.
+                </div>
         </div>
-        <div class="recurso">
-            <strong>Mapa de lecturas:</strong> crear un mural colectivo con frases o libros que los estudiantes quieran recomendar.
+
+        <div class="caja" onclick="toggleContenido(this)">
+            <div class="titulo"> <strong>Mapa de lecturas</strong> </div>
+            <div class="contenido">
+                Crear un mural colectivo con frases o libros que los estudiantes quieran recomendar.
+            </div>
         </div>
 
         <h2>Recursos para descargar</h2>
         <ul>
             <li>
                 <a href="#">Lista de frases y actividades imprimibles</a>
-            </li>
+            </li> 
+            <br>
             <li>
                 <a href="#"> Mapa de exploradores de lecturas</a>
             </li>
+            <br>
         </ul>
-
-        <a class="volver" href="index.html"> </a>
     </div>
 
      <footer>
@@ -78,6 +92,12 @@
                 <a href="www.instagram.com/CarlaMontesino"> Instagram </a> | <a href="www.github.com/CarlaMontesino"> GitHub</a> | Créditos
 
     </footer>
+
+    <script>
+  function toggleContenido(caja) {
+    caja.classList.toggle('activa');
+  }
+</script>
 
 </body>
 </html>
