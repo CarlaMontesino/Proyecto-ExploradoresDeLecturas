@@ -255,3 +255,67 @@ a {
     left: 10px;
 }
 
+/* Página Biblioteca */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff8d0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #2d5948;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1e5a5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Cuentos - cartas */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cuento-card {
+    background-color: #fff;
+    border-left: 5px solid #2d5948;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cuento-card h3 {
+    margin-top: 0;
+    color: #2d5948;
+}
+
+.cuento-card p {
+    font-size: 0.95rem;
+}
+
+.cuento-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+
