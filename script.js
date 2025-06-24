@@ -16,3 +16,15 @@ function mostrarFeedback(opcion) {
     caja.classList.toggle('activa');
   }
 
+// Saludo 
+
+const nombreUsuario = prompt("¡Hola, mi nombre es Lumi! ¿Cómo te llamas?");
+
+// Si ingresó algo, lo saludamos; si no, damos un mensaje alternativo
+if (nombreUsuario && nombreUsuario.trim() !== "") {
+    alert(`¡Encantado de conocerte, ${nombreUsuario.trim()}!`);
+} else {
+  alert("¡Hola! No alcanzaste a escribir tu nombre, pero igual ¡bienvenid@!");
+}
+
+
