@@ -150,7 +150,7 @@ footer a {
 }
 
 
-h1, h2 {
+h2 {
     color: #2d5948;
     text-align: center;
     padding: 3rem 2rem;
@@ -318,4 +318,50 @@ a {
     margin-bottom: 0.5rem;
 }
 
+/* Etiquetas h3 en la página Biblioteca - Secciones*/
 
+h3 {
+    color: #2d5948;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 8rem;
+}
+/* Títulos de las obras */
+h4 {
+    color: #2d5948;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+h1 {
+    color: #2d5948;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 10rem;
+}
+
+/*formulario de inicio de sesión */
+
+.login-form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.login-form input {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+.login-form button {
+    padding: 0.4rem 0.8rem;
+    background-color: #2d5948;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.login-form button:hover {
+    background-color: #244c3e;
+}

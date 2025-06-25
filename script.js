@@ -12,9 +12,9 @@ function mostrarFeedback(opcion) {
 
 /* Página docentes, para que las cajas brinden la información de la actividad */
 
-  function toggleContenido(caja) {
-    caja.classList.toggle('activa');
-  }
+function toggleContenido(caja) {
+  caja.classList.toggle('activa');
+}
 
 // Saludo 
 
@@ -27,4 +27,31 @@ if (nombreUsuario && nombreUsuario.trim() !== "") {
   alert("¡Hola! No alcanzaste a escribir tu nombre, pero igual ¡bienvenid@!");
 }
 
+
+/*
+
+function handleCreateAccount() {
+  const newUser = prompt("¡Hola! Vamos a crear tu usuario. Escribí el nombre de usuario que quieras:");
+  if (newUser && newUser.trim() !== "") {
+  localStorage.setItem('savedUser', newUser.trim());
+  alert(`Usuario "${newUser.trim()}" creado exitosamente. Ahora podés iniciar sesión.`);
+  } else {
+    alert("Por favor, escribí un nombre de usuario válido.");
+  }
+}
+
+  function handleLogin() {
+  const user = document.getElementById('username').value.trim();
+  const savedUser = localStorage.getItem('savedUser');
+  if (!user) {
+  alert('Por favor, ingresá tu usuario antes de continuar.');
+    return;
+  }
+  if (savedUser && user === savedUser) {
+    alert(`¡Bienvenido/a, ${user}!`);
+  } else {
+  alert("Usuario no encontrado. Podés crear una cuenta primero.");
+  }
+}
+*/
 
