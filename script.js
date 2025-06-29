@@ -3,12 +3,13 @@
 function mostrarFeedback(opcion) {
     const feedback = document.getElementById('feedback');
     if (opcion === 1) {
-        feedback.innerText = '¡Exacto! A veces lo más valioso no se ve, pero se siente';
+        feedback.innerHTML = '¡Exacto! A veces lo más valioso no se ve, pero se siente';
     } else {
-        feedback.innerText = '¡Ji, ji, ji! Tal vez no con lupa, pero sí con el corazón';
+        feedback.innerHTML = '¡Ji, ji, ji! Tal vez no con lupa, pero sí con el corazón';
     }
     feedback.style.display = 'block';
 }
+
 
 /* Página docentes, para que las cajas brinden la información de la actividad */
 
@@ -27,8 +28,10 @@ if (nombreUsuario && nombreUsuario.trim() !== "") {
   alert("¡Hola! No alcanzaste a escribir tu nombre, pero igual ¡bienvenid@!");
 }
 
+document.getElementById("mensaje").textContent = "Hola " + nombreUsuario + "bienvenid@ a Exploradores de Lecturas";
 
-/*
+
+/* Intento para que el formulario sea funcional
 
 function handleCreateAccount() {
   const newUser = prompt("¡Hola! Vamos a crear tu usuario. Escribí el nombre de usuario que quieras:");
