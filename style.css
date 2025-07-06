@@ -14,15 +14,27 @@ header {
     background-color: #e9e4c9;
     padding: 1rem;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    min-width: 300px;
+    
 }
 
-header a {
+.nav-principal a {
     color: #2d5948;
     text-decoration: none;
     font-weight: bold;
-    margin: 0.5rem;
+    border-radius: 6px;
+}
+.nav-principal {
+    display: flex;
+    gap: 2.2rem;
+}
+
+.nav-principal a:hover {
+    color: #da5c2b;
 }
 
 .hero {
@@ -403,4 +415,63 @@ h1 {
 
 .lumiPensativo {
     max-width: 400px;
+}
+
+
+/* Menú hamburguesa */
+
+.menu-hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #2d5948;
+  cursor: pointer;
+  padding: 0.2rem 0.7rem;
+  border-radius: 8px;
+}
+.menu-hamburguesa:focus {
+  outline: 2px solid #2d5948;
+}
+
+/* Menú desplegable */
+.menu-desplegable {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: auto;
+  background: #fff8d0;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+  min-width: 170px;
+  z-index: 100;
+  padding: 0.6rem 0;
+}
+.menu-desplegable a {
+  color: #2d5948;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 1.2rem;
+  transition: background 0.2s;
+  border-radius: 6px;
+}
+.menu-desplegable a:hover {
+  background: #f1e5a5;
+}
+
+/* Mostrar menú desplegable en móvil */
+.menu-desplegable.activo {
+  display: flex;
+}
+
+/* Responsive: esconder menú principal, mostrar hamburguesa */
+@media (max-width: 800px) {
+  .nav-principal {
+    display: none;
+  }
+  .menu-hamburguesa {
+    display: block;
+  }
 }

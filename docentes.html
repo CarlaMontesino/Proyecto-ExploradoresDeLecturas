@@ -15,17 +15,29 @@
         <img src="IMG/Lumi.png" alt="Volvamos arriba"> </a> 
     
      <header>
-        <a href="./index.html">Inicio</a>
-        <a href="./juego.html">¡Juguemos!</a>
-        <a href="./comoJugar.html">¿Cómo jugar?</a>
-        <a href="./docentes.html">Docentes</a>
-        <div class="dropdown">
-            <a href="./Biblioteca.html">Biblioteca ▼</a>
-            <div class="dropdown-content">
-                <a href="Biblioteca.html">Cuentos</a>
-                <a href="Biblioteca.html">Poesías</a>
-                <a href="Biblioteca.html">Novelas</a>
-            </div>
+        <nav class="nav-principal">
+            <a href="./index.html">Inicio</a>
+            <a href="./juego.html">¡Juguemos!</a>
+            <a href="./comoJugar.html">¿Cómo jugar?</a>
+            <a href="./docentes.html">Docentes</a>
+                <div class="dropdown">
+                 <a href="./Biblioteca.html">Biblioteca ▼</a>
+                    <div class="dropdown-content">
+                     <a href="Biblioteca.html">Cuentos</a>
+                     <a href="Biblioteca.html">Poesías</a>
+                     <a href="Biblioteca.html">Novelas</a>
+                     </div>
+                </div>
+        </nav>
+        
+        <button class="menu-hamburguesa" id="btnMenu" aria-label="Abrir menú">&#9776;</button>
+
+        <div class="menu-desplegable" id="menuDesplegable">
+            <a href="./index.html"> Inicio</a>
+            <a href="./juego.html">¡Juguemos!</a>
+            <a href="./comoJugar.html"> ¿Cómo jugar?</a>
+            <a href="./docentes.html">Docentes</a>
+            <a href="./Biblioteca.html">Biblioteca</a>
         </div>
     </header>
     
@@ -108,11 +120,7 @@
 
     </footer>
 
-    <script>
-        function toggleContenido(caja) {
-         caja.classList.toggle('activa');
-         }
-    </script>
+    <script src="./script.js"></script>
 
 </body>
 </html>
