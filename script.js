@@ -17,8 +17,8 @@ function toggleContenido(caja) {
   caja.classList.toggle('activa');
 }
 
-// Saludo 
-
+// Saludo es muy molesto
+/* 
 const nombreUsuario = prompt("¡Hola, mi nombre es Lumi! ¿Cómo te llamas?");
 
 // Si ingresó algo, lo saludamos; si no, damos un mensaje alternativo
@@ -27,7 +27,7 @@ if (nombreUsuario && nombreUsuario.trim() !== "") {
 } else {
   alert("¡Hola! No alcanzaste a escribir tu nombre, pero igual ¡bienvenid@!");
 }
-
+*/
 
 // menú hamburguesa
 document.getElementById('btnMenu').addEventListener('click', function() {

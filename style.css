@@ -30,7 +30,7 @@ header {
 }
 .nav-principal {
     display: flex;
-    gap: 2.2rem;
+    gap: 17rem;
 }
 
 .nav-principal a:hover {
