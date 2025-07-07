@@ -101,7 +101,7 @@ footer a {
     color: #4b2e2e;
 }
 
-/* Página del juego */
+/* Página del juego 
 
 .juego-container {
     background-color: ffd97d;
@@ -113,6 +113,20 @@ footer a {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+*/
+
+.juego-container {
+    background: #ffd97d;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,1);
+    padding: 2rem;
+    width: 400px;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .lumi-img {
@@ -473,5 +487,29 @@ h1 {
   }
   .menu-hamburguesa {
     display: block;
+  }
+}
+
+/* Contenedor de los dos juegos */
+
+.juegos-dobles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1300px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .juegos-dobles {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .juego-container {
+    width: 95%;
+    max-width: 500px;
   }
 }

@@ -15,8 +15,8 @@
         <nav class="nav-principal">
             <a href="./index.html">Inicio</a>
             <a href="./juego.html">¡Juguemos!</a>
-            <a href="./comoJugar.html">¿Cómo jugar?</a>
-            <a href="./docentes.html">Docentes</a>
+            <a href="./docentes.html">Recursos</a>
+            <a href="./comoJugar.html">Acerca de...</a>
                 <div class="dropdown">
                  <a href="./Biblioteca.html">Biblioteca ▼</a>
                     <div class="dropdown-content">
@@ -31,9 +31,9 @@
 
         <div class="menu-desplegable" id="menuDesplegable">
             <a href="./index.html"> Inicio</a>
-            <a href="./juego.html">¡Juguemos!</a>
-            <a href="./comoJugar.html"> ¿Cómo jugar?</a>
-            <a href="./docentes.html">Docentes</a>
+            <a href="./juego.html">¡Juguemos!</a>   
+            <a href="./docentes.html">Recursos</a>
+            <a href="./comoJugar.html"> Acerca de...</a>
             <a href="./Biblioteca.html">Biblioteca</a>
         </div>
     </header>
@@ -43,30 +43,24 @@
      </section>
     
     
-    <main class="juego-container">
-
-        <img src="IMG/Lumi.png" alt="Lumi te invita a jugar" class="lumi-img">
-
-        <div id="fraseTexto" class="frase">
-            "Lo esencial es invisible a los ojos"
-        </div>
-        <div id="opciones" class="opciones"></div>
-        <div id="feedback" class="feedback"></div>
-        <div class="controles">
-            <button id="btn-back" class="btn-control btn-back" disabled>Anterior</button>
-            <button id="btn-next" class="btn-control btn-next" disabled>Siguiente</button>
-        </div>
-<!-- 
-         <div id="feedback" class="feeback">
-        <button class="boton-opcion" onclick="mostrarFeedback(1)"> Que lo más importante no siempre se puede ver</button>
-        <button class="boton-opcion" onclick="mostrarFeedback(2)"> Que hay que mirar todo con lupa</button>
-        </div>
-
-        <div class="frase">
-
-
-        </div>-->
+    <main class="juegos-dobles">
+        <section class="juego-container">
+         <img src="IMG/Lumi.png" alt="Lumi te invita a jugar" class="lumi-img">
+            <div class="frase"> Explorando Frases </div>
+            <div class="opciones"</div>
+            <button> <a href="./juego1.html"> ¡A explorar! </a></button>
+        </section>
+    <section class="juego-container" id="juego2">
+         <img src="IMG/Lumi.png" alt="Lumi invitando de nuevo" class="lumi-img">
+            <div class="frase">¿Qué tipo de lector sos?</div>
+        <!-- Aquí podés agregar el contenido/JS del segundo juego -->
+             <div class="opciones">
+             <button> <a href="./juego2.html"> ¡A descubrir! </a></button>
+            </div>
+        <div class="feedback"></div>
+        </section>
     </main>
+    
 
     <script src="script.js"> </script>
     <script src="./juego.js"> </script>
