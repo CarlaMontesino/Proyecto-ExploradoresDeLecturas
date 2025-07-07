@@ -101,20 +101,6 @@ footer a {
     color: #4b2e2e;
 }
 
-/* Página del juego 
-
-.juego-container {
-    background-color: ffd97d;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
-    padding: 2rem;
-    max-width: 600px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-*/
 
 .juego-container {
     background: #ffd97d;
@@ -286,17 +272,99 @@ a {
 
 /* Página ¿Cómo jugar? */
 
+
 .dialogo-contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.5rem;
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff8d0;
+  border-radius: 20px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.05);
 }
 
+.dialogo-contenedor img {
+  width: 120px;
+  min-width: 90px;
+  max-width: 130px;
+  height: auto;
+  margin-top: 6px;
+  filter: drop-shadow(0 2px 8px #c5a45a50); 
+  border-radius: 16px;
+}
+
+.burbuja-lumi {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+
+.dialogo-lumi {
+  font-size: 1.08rem;
+  color: #4b2e2e;
+  line-height: 1.6;
+  background: #ffd97d;
+  padding: 1rem 1.2rem;
+  border-radius: 22px;
+  box-shadow: 0 2px 7px rgba(223, 197, 90, 0.09);
+  margin-left: 0.5rem;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.dialogo-lumi h2 {
+  color: #2d5948;
+  margin-top: 0;
+}
+.dialogo-lumi a.jugar {
+  color: #e2d6d2;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .dialogo-contenedor {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem 0.6rem;
+  }
+  .dialogo-contenedor img {
+    margin: 0 auto;
+    display: block;
+  }
+   .burbuja-lumi::before {
+    left: 30px;
+    top: -18px;
+    border-top: none;
+    border-bottom: 18px solid #fff;
+    border-right: 18px solid transparent;
+    border-left: 18px solid transparent;
+    width: 0;
+    height: 0;
+    /* El triangulito apunta arriba en mobile */
+  }
+}
+
+/* Burbuja triangular a la izquierda */
+.burbuja-lumi::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -22px;
+  top: 32px;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-right: 22px solid #2d5948;
+  /* Sombra al triángulo */
+  filter: drop-shadow(-2px 2px 2px #c5a45a33);
+}
+
+/*
 .dialogo-lumi {
     flex: 1;
     background-color: #fff8d0;
@@ -315,7 +383,7 @@ a {
     top: -20px;
     left: 10px;
 }
-
+*/
 /* Página Biblioteca */
 
 .dropdown {
@@ -399,36 +467,6 @@ h1 {
     text-align: center;
     padding: 1rem 1rem;
     font-size: 10rem;
-}
-
-/*formulario de inicio de sesión */
-
-.login-form {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-}
-.login-form input {
-    padding: 0.4rem 0.6rem;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    font-size: 0.9rem;
-}
-.login-form button {
-    padding: 0.4rem 0.8rem;
-    background-color: #2d5948;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 0.9rem;
-}
-.login-form button:hover {
-    background-color: #244c3e;
-}
-
-.lumiPensativo {
-    max-width: 400px;
 }
 
 
