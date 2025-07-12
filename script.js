@@ -1,15 +1,4 @@
-/* Página del juego - muestra 
 
-function mostrarFeedback(opcion) {
-    const feedback = document.getElementById('feedback');
-    if (opcion === 1) {
-        feedback.innerHTML = '¡Exacto! A veces lo más valioso no se ve, pero se siente';
-    } else {
-        feedback.innerHTML = '¡Ji, ji, ji! Tal vez no con lupa, pero sí con el corazón';
-    }
-    feedback.style.display = 'block';
-}
-*/
 
 
 /* Página docentes, para que las cajas brinden la información de la actividad */
@@ -56,6 +45,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+// Cargar cuentos desde el archivo JSON al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+  const galeria = document.getElementById('cuentos-galeria');
+  if (!galeria) return;
+
+  fetch('./cuentos.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error al cargar el archivo JSON');
+      }
+      return response.json();
+    })
+    .then(data => mostrarCuentos(data, galeria))
+    .catch(error => console.error('Error al cargar los cuentos:', error));
+});
+
+// Función para renderizar la galería
+function mostrarCuentos(cuentos, galeria) {
+  cuentos.forEach(cuento => {
+    const card = document.createElement('div');
+    card.className = 'tarjeta-cuento';
+    card.innerHTML = `
+      <img src="${cuento.imagen}" alt="Portada de ${cuento.titulo}">
+      <h4>${cuento.titulo}</h4>
+      <p><strong>Autor:</strong> ${cuento.autor}</p>
+      <p>${cuento.descripcion}</p>
+    `;
+    galeria.appendChild(card);
+  });
+}
+
+
 
 
 

@@ -779,3 +779,168 @@ h2 {
     padding: 0.5rem 1rem;
   }
 }
+
+/* Estilo para la sección biblioteca */
+
+/* Tipografías si no están todavía */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap');
+
+/* GRID principal para secciones de biblioteca */
+.categoria-biblioteca {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+:root {
+  --ucla-blue: #2274a5;
+  --orange-pantone: #f75c03;
+  --jonquil: #f1c40f;
+  --dogwood-rose: #d90368;
+  --emerald: #00cc66;
+  --fondo-claro: #fff8d0;
+  --texto-principal: #2d2d2d;
+  --fuente-base: 'Fredoka', sans-serif;
+}
+
+/* Tarjeta contenedora */
+.categoria-card {
+  background-color: var(--jonquil);
+  border-radius: 18px;
+  box-shadow: 0 0 16px rgba(0, 204, 102, 0.2); /* verde esmeralda */
+  padding: 1.8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  text-align: center;
+}
+
+.categoria-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 24px rgba(0, 204, 102, 0.5);
+}
+
+/* Imagen del personaje */
+.categoria-card img {
+  width: 90px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 5px #f75c03);
+}
+
+/* Título de sección (ej: Cuentos, Poesías...) */
+.categoria-card .frase {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  color: #8bfffb; /* UCLA Blue neón */
+  margin-bottom: 1rem;
+}
+
+/* Botón */
+.boton-explorar {
+  display: inline-block;
+  background-color: #d90368; /* Dogwood Rose */
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.boton-explorar:hover {
+  background-color: var(--emerald);
+  color: #2d2d2d;
+  transform: scale(1.05);
+}
+
+/* Responsive mejorado */
+@media (max-width: 768px) {
+  .biblioteca-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .biblioteca-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+
+/* Galeria de cuentos */
+
+.galeria-cuentos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.tarjeta-cuento {
+  background-color: #1d1e33;
+  border: 2px solid #8bfffb;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px #8bfffb88;
+  padding: 1.5rem;
+  max-width: 280px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-cuento:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #ff69b4;
+}
+
+.tarjeta-cuento img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-cuento h4 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff69b4;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.tarjeta-cuento .autor {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #8bfffb;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta-cuento .descripcion {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.boton-leer {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #ff69b4;
+  color: white;
+  border-radius: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.boton-leer:hover {
+  background: #da5c2b;
+}
+
+

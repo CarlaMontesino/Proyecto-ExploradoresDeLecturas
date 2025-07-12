@@ -51,46 +51,29 @@
      <h1>Exploradores de Lecturas</h1>
     </section>
 
-    <main class="juegos-dobles">
-        <section class="juego-container">
-         <img src="IMG/Lumi.png" alt="Lumi te invita a jugar" class="lumi-img">
-            <div class="frase"> Cuentos </div>
-            <div class="opciones"</div>
-            <button> <a href="./books.json"> ¡A explorar! </a></button>
-        </section>
-        <section class="juego-container" id="juego2">
-         <img src="IMG/Lumi.png" alt="Lumi invitando de nuevo" class="lumi-img">
-            <div class="frase"> Poesías </div>
-             <div class="opciones">
-             <button> <a href="./books.json"> ¡A descubrir! </a></button>
-            </div>
-        <div class="feedback"></div>
-        </section>
-        <section class="juego-container">
-         <img src="IMG/Lumi.png" alt="Lumi te invita a jugar" class="lumi-img">
-            <div class="frase"> Novelas </div>
-            <div class="opciones"</div>
-            <button> <a href="./books.json"> ¡A explorar! </a></button>
-        </section>
-    
-    </main>
-
-    <section class="contacto-section">
-        <h2>¿Querés contactarnos?</h2>
-        <form class="form-contacto" id="formContacto" autocomplete="off">
-         <label for="nombre">Nombre</label>
-         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-
-         <label for="email">Correo electrónico</label>
-         <input type="email" id="email" name="email" placeholder="ejemplo@mail.com" required>
-
-         <label for="mensaje">Mensaje</label>
-         <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta, sugerencia o saludo..." required></textarea>
-
-         <button type="submit">Enviar</button>
-         <div id="mensaje-exito" class="mensaje-exito"></div>
-        </form>
+    <main class="categoria-biblioteca">
+    <section class="categoria-card">
+      <img src="IMG/LumiFeliz.png" alt="Icono cuentos">
+      <h2>Cuentos</h2>
+      <p>Descubrí mundos cortos pero profundos, llenos de personajes memorables y aventuras.</p>
+      <a href="./cuentos.html" class="boton-explorar">Explorar cuentos</a>
     </section>
+
+    <section class="categoria-card">
+      <img src="IMG/LumiFeliz.png" alt="Icono poesías">
+      <h2>Poesías</h2>
+      <p>Juegos de palabras, ritmo, emoción y metáforas que invitan a sentir y pensar.</p>
+      <a href="./poesias.json" class="boton-explorar">Explorar poesías</a>
+    </section>
+
+    <section class="categoria-card">
+      <img src="IMG/LumiFeliz.png" alt="Icono novelas">
+      <h2>Novelas</h2>
+      <p>Relatos extensos para sumergirse en historias fascinantes, mágicas o reales.</p>
+      <a href="./novelas.json" class="boton-explorar">Explorar novelas</a>
+    </section>
+  </main>
+
 
     <!-- 
     <section class="hero">

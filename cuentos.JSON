@@ -1,0 +1,45 @@
+[
+  {
+    "titulo": "El Principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "descripcion": "Un cuento poético sobre la mirada de los niños, los vínculos y lo invisible.",
+    "imagen": "IMG/portada-principito.webp",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "Caperucita Roja",
+    "autor": "Hermanos Grimm",
+    "descripcion": "Una niña, un lobo y una advertencia que atraviesa generaciones.",
+    "imagen": "IMG/caperucita.jpg",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "Pinocho",
+    "autor": "Carlo Collodi",
+    "descripcion": "El muñeco de madera que quería convertirse en un niño de verdad.",
+    "imagen": "IMG/pinocho.jpg",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "La Sirenita",
+    "autor": "Hans Christian Andersen",
+    "descripcion": "Una historia de amor y sacrificio bajo el mar.",
+    "imagen": "IMG/sirenita.jpg",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "Alicia en el País de las Maravillas",
+    "autor": "Lewis Carroll",
+    "descripcion": "Una niña curiosa cae en una madriguera y entra en un mundo de lógica retorcida.",
+    "imagen": "IMG/alicia.jpg",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "Peter Pan",
+    "autor": "J. M. Barrie",
+    "descripcion": "El niño que no quería crecer y su mundo mágico: Nunca Jamás.",
+    "imagen": "IMG/peterpan.jpg",
+    "linkLectura": "#"
+  }
+]
+
