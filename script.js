@@ -31,6 +31,15 @@ document.querySelectorAll('.menu-desplegable a').forEach(link => {
   });
 });
 
+// ⬇ NUEVO BLOQUE que cierra al hacer clic fuera
+document.addEventListener('click', function (event) {
+  const menu = document.getElementById('menuDesplegable');
+  const btn = document.getElementById('btnMenu');
+  if (!menu.contains(event.target) && !btn.contains(event.target)) {
+    menu.classList.remove('activo');
+  }
+});
+
 //Formulario de contacto
 
 document.addEventListener('DOMContentLoaded', function() {
