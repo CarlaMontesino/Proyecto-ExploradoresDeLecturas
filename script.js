@@ -78,6 +78,57 @@ function mostrarCuentos(cuentos, galeria) {
   });
 }
 
+// poesias
+
+document.addEventListener('DOMContentLoaded', () => {
+  const galeria = document.getElementById('galeria-poesias');
+  if (!galeria) return;
+
+  fetch('./poesias.json')
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(poesia => {
+        const card = document.createElement('div');
+        card.className = 'tarjeta-cuento'; // reutilizamos estilos
+        card.innerHTML = `
+          <img src="${poesia.imagen}" alt="Imagen de ${poesia.titulo}">
+          <h4>${poesia.titulo}</h4>
+          <p><strong>Autor:</strong> ${poesia.autor}</p>
+          <p>${poesia.descripcion}</p>
+        `;
+        galeria.appendChild(card);
+      });
+    })
+    .catch(error => {
+      console.error('Error al cargar las poesías:', error);
+    });
+});
+
+
+// novelas
+
+document.addEventListener('DOMContentLoaded', () => {
+  const galeria = document.getElementById('galeria-novelas');
+  if (!galeria) return;
+
+  fetch('./novelas.json')
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(novela => {
+        const card = document.createElement('div');
+        card.className = 'tarjeta-cuento';
+        card.innerHTML = `
+          <img src="${novela.imagen}" alt="Portada de ${novela.titulo}">
+          <h4>${novela.titulo}</h4>
+          <p><strong>Autor:</strong> ${novela.autor}</p>
+          <p>${novela.descripcion}</p>
+        `;
+        galeria.appendChild(card);
+      });
+    })
+    .catch(error => console.error('Error al cargar las novelas:', error));
+});
+
 
 
 

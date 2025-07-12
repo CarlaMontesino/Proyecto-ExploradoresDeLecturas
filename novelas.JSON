@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Matilda",
+    "autor": "Roald Dahl",
+    "descripcion": "Una niña brillante con poderes especiales y una gran pasión por la lectura.",
+    "imagen": "IMG/matilda.jpg",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "Charlie y la fábrica de chocolate",
+    "autor": "Roald Dahl",
+    "descripcion": "Una aventura mágica dentro de una excéntrica fábrica de dulces.",
+    "imagen": "IMG/charlie-fabrica.jpg",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "Coraline",
+    "autor": "Neil Gaiman",
+    "descripcion": "Una historia misteriosa y valiente sobre atravesar el miedo.",
+    "imagen": "IMG/coraline.jpg",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "El diario de Ana Frank",
+    "autor": "Ana Frank",
+    "descripcion": "Una obra íntima y conmovedora escrita desde el encierro.",
+    "imagen": "IMG/ana-frank.jpg",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "La invención de Morel",
+    "autor": "Adolfo Bioy Casares",
+    "descripcion": "Una novela filosófica y fantástica sobre el tiempo, la realidad y el amor.",
+    "imagen": "IMG/morel.jpg",
+    "linkLectura": "#"
+  }
+]

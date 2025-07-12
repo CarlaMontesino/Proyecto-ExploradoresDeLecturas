@@ -1,0 +1,23 @@
+[
+  {
+    "titulo": "Dice la lluvia",
+    "autor": "Mar Benegas",
+    "descripcion": "Una poesía contemporánea que invita a escuchar la naturaleza.",
+    "imagen": "IMG/dice-la-lluvia.webp",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "Te doy una canción",
+    "autor": "Silvio Rodríguez",
+    "descripcion": "Versos que celebran el poder de las palabras como regalo.",
+    "imagen": "IMG/te-doy-una-cancion.webp",
+    "linkLectura": "#"
+  },
+  {
+    "titulo": "Romance sonámbulo",
+    "autor": "Federico García Lorca",
+    "descripcion": "Imágenes potentes, colores y símbolos en una poesía vibrante.",
+    "imagen": "IMG/romance-sonambulo.webp",
+    "linkLectura": "#"
+  }
+]

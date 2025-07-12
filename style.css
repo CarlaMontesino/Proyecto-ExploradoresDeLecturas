@@ -943,4 +943,43 @@ h2 {
   background: #da5c2b;
 }
 
+/* Contenedor de todas las tarjetas de categoría */
+.biblioteca-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: stretch; /* asegura que todas tengan misma altura */
+}
+
+/* Asegura que el contenido se expanda y el botón se quede abajo */
+.categoria-card {
+  height: 100%;
+}
+
+/* Este contenedor interno organiza el contenido de la tarjeta */
+.categoria-card .contenido {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Forzar que el botón siempre esté al final */
+.categoria-card .boton-explorar {
+  margin-top: auto;
+}
+
+/* Hace que html y body ocupen el 100% del alto de la pantalla */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El main toma todo el espacio disponible entre header y footer */
+main {
+  flex: 1;
+}
+
 
