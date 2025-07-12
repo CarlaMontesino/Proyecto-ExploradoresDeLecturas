@@ -1,97 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title> Exploradores de Lectura - ¿Cómo jugar con Lumi? </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego de Exploradores de Lecturas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-    
-    <a href="#" class="scroll-top"> 
-        <img src="IMG/Lumi.png" alt="Volvamos arriba"> </a> 
 
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <a href="#" class="scroll-top">
+    <img src="IMG/Lumi.png" alt="Volvamos arriba" />
+  </a>
 
-    <header>
-       <nav class="nav-principal">
-            <a href="./index.html">Inicio</a>
-            <a href="./juego.html">¡Juguemos!</a>
-            <a href="./docentes.html">Recursos</a>
-            <a href="./comoJugar.html">Acerca de...</a>
-                <div class="dropdown">
-                 <a href="./Biblioteca.html">Biblioteca ▼</a>
-                    <div class="dropdown-content">
-                     <a href="Biblioteca.html">Cuentos</a>
-                     <a href="Biblioteca.html">Poesías</a>
-                     <a href="Biblioteca.html">Novelas</a>
-                     </div>
-                </div>
-        </nav>
-        
-        <button class="menu-hamburguesa" id="btnMenu" aria-label="Abrir menú">&#9776;</button>
+  <!-- HEADER + NAVIGATION -->
+  <header>
+    <nav class="nav-principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./juego.html">¡Juguemos!</a></li>
+        <li><a href="./docentes.html">Recursos</a></li>
+        <li><a href="./comoJugar.html">Acerca de...</a></li>
+        <li class="dropdown">
+          <a href="./Biblioteca.html">Biblioteca ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="Biblioteca.html">Cuentos</a></li>
+            <li><a href="Biblioteca.html">Poesías</a></li>
+            <li><a href="Biblioteca.html">Novelas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-        <div class="menu-desplegable" id="menuDesplegable">
-            <a href="./index.html"> Inicio</a>
-            <a href="./juego.html">¡Juguemos!</a>   
-            <a href="./docentes.html">Recursos</a>
-            <a href="./comoJugar.html"> Acerca de...</a>
-            <a href="./Biblioteca.html">Biblioteca</a>
-        </div>
-    </header>
+    <button class="menu-hamburguesa" id="btnMenu" aria-label="Abrir menú">&#9776;</button>
 
-    <section class="hero">
-         <h1> Exploradores de Lecturas</h1>
-     </section>
+    <div class="menu-desplegable" id="menuDesplegable">
+      <a href="./index.html">Inicio</a>
+      <a href="./juego.html">¡Juguemos!</a>
+      <a href="./docentes.html">Recursos</a>
+      <a href="./comoJugar.html">Acerca de...</a>
+      <a href="./Biblioteca.html">Biblioteca</a>
+    </div>
+  </header>
 
-    <section class="dialogo-contenedor">
-        <img src="IMG/Lumi.png" alt="Lumi saludando">
-        <div class="burbuja-lumi"></div>
-         <div class="dialogo-lumi">
-            ¡Hola, soy <strong>Lumi</strong> y voy a acompañarte en esta aventura lectora!
-          <br><br>
-            Este juego está lleno de frases, cuentos y pensamientos. No hay respuestas correctas o incorrectas... solo caminos diferentes para pensar.
-          <br><br>
-          Vas a leer una frase, elegir una de las opciones, y yo te voy a contar algo sobre lo que elegiste. ¡Vamos a reflexionar juntxs!
-          <br><br>
-          Al final del recorrido, te voy a dejar un mensaje inspirador... ¡y tal vez una recomendación para seguir leyendo!
-          <br><br>
-          ¡Hacé clic en <a class="jugar" href="juego.html"> "Jugar ahora"</a> cuando quieras comenzar!
-        </div>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Exploradores de Lecturas</h1>
+  </section>
+
+  <!-- CONTENEDOR DE JUEGOS -->
+  <main class="juegos-dobles">
+    <section class="juego-container">
+      <img src="IMG/Lumi.png" alt="Lumi te invita a jugar" class="lumi-img" />
+      <div class="frase">Explorando Frases</div>
+      <div class="opciones">
+        <button><a href="./juego1.html">¡A explorar!</a></button>
+      </div>
     </section>
 
-    <section class="dialogo-contenedor">
-        <img src="IMG/LumiPensativo.png" alt= "Lumi pensativo" class="LumiPensativo">
-        <div class="burbuja-lumi"></div>
-         <div class="dialogo-lumi">
-            <h2>¿De qué se trata Exploradores de Lecturas?</h2>
-
-         <p> Exploradores de Lecturas surge como un proyecto que busca integrar lo ludico con la literatura. En el intento de comprender los tiempos que nos atraviesan, las narrativas transmedia las vemos como una opción más para que la literatura siga vigente en las nuevas generaciones, pero también en quienes ya tenemos años detrás de los libros.
-         </p>
-            <br>
-            <p>
-         No es nuestra iniciativa hacer juicios de valor de las obras citadas, sino que invitamos a la reflexión crítica con nuestro personaje principal llamado "Lumi"
-            </p>
-            <br>
-            <p>
-            El juego nos invita a sumergirnos en el mundo de los libros respondiendo preguntas (¡que no tienen respuestas correctas!) sobre obras literarias, en un primer momento, clásicas.
-            </p>
-            <p>
-            La lectura como travesía emocionante, como disparador para nuevas reflexiones y el plus de compartir con otros nuestros puntos de vista.
-            </p>
-        </div>
+    <section class="juego-container" id="juego2">
+      <img src="IMG/Lumi.png" alt="Lumi invitando de nuevo" class="lumi-img" />
+      <div class="frase">¿Qué tipo de lector sos?</div>
+      <div class="opciones">
+        <button><a href="./juego2.html">¡A descubrir!</a></button>
+      </div>
+      <div class="feedback"></div>
     </section>
+  </main>
 
-    <footer>
+  <!-- SCRIPTS -->
+  <script src="./script.js"></script>
+  <script src="./juego.js"></script>
+
+  <footer>
         © 2025 – Desarrollado por Carla Montesino
         <br>
                 <a href="https://www.instagram.com/CarlaMontesino" target="_blank">Instagram</a> | <a href="https://www.github.com/CarlaMontesino" target="_blank">GitHub</a>
 
     </footer>
-
-    <script src="./script.js"></script>
 
 </body>
 </html>

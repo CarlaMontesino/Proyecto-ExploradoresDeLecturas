@@ -1,43 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Juego - ¿Qué tipo de lector sos?</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-         <header>
-        <nav class="nav-principal">
-            <a href="./index.html">Inicio</a>
-            <a href="./juego.html">¡Juguemos!</a>
-            <a href="./docentes.html">Recursos</a>
-            <a href="./comoJugar.html">Acerca de...</a>
-                <div class="dropdown">
-                 <a href="./Biblioteca.html">Biblioteca ▼</a>
-                    <div class="dropdown-content">
-                     <a href="Biblioteca.html">Cuentos</a>
-                     <a href="Biblioteca.html">Poesías</a>
-                     <a href="Biblioteca.html">Novelas</a>
-                     </div>
-                </div>
-        </nav>
-        
-        <button class="menu-hamburguesa" id="btnMenu" aria-label="Abrir menú">&#9776;</button>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego de Exploradores de Lecturas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-        <div class="menu-desplegable" id="menuDesplegable">
-            <a href="./index.html"> Inicio</a>
-            <a href="./juego.html">¡Juguemos!</a>   
-            <a href="./docentes.html">Recursos</a>
-            <a href="./comoJugar.html"> Acerca de...</a>
-            <a href="./Biblioteca.html">Biblioteca</a>
-        </div>
-    </header>
+<body>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <a href="#" class="scroll-top">
+    <img src="IMG/Lumi.png" alt="Volvamos arriba" />
+  </a>
+
+  <!-- HEADER + NAVIGATION -->
+  <header>
+    <nav class="nav-principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./juego.html">¡Juguemos!</a></li>
+        <li><a href="./docentes.html">Recursos</a></li>
+        <li><a href="./comoJugar.html">Acerca de...</a></li>
+        <li class="dropdown">
+          <a href="./Biblioteca.html">Biblioteca ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="Biblioteca.html">Cuentos</a></li>
+            <li><a href="Biblioteca.html">Poesías</a></li>
+            <li><a href="Biblioteca.html">Novelas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="menu-hamburguesa" id="btnMenu" aria-label="Abrir menú">&#9776;</button>
+
+    <div class="menu-desplegable" id="menuDesplegable">
+      <a href="./index.html">Inicio</a>
+      <a href="./juego.html">¡Juguemos!</a>
+      <a href="./docentes.html">Recursos</a>
+      <a href="./comoJugar.html">Acerca de...</a>
+      <a href="./Biblioteca.html">Biblioteca</a>
+    </div>
+  </header>
+
+    <section class="hero">
+     <h1>Exploradores de Lecturas</h1>
+    </section>
         
         <script src="./script.js"></script>
     </body>

@@ -1,507 +1,92 @@
-/* Página de Inicio y generalidades */
+/* ----------------------------------------------
+  RESET & VARIABLES: Paleta infantil-techno + base tipográfica
+----------------------------------------------- */
+:root {
+  --ucla-blue: #2274a5;
+  --orange-pantone: #f75c03;
+  --jonquil: #f1c40f;
+  --dogwood-rose: #d90368;
+  --emerald: #00cc66;
+  --fondo-claro: #fff8d0;
+  --texto-principal: #2d2d2d;
+  --fuente-base: 'Fredoka', sans-serif;
+}
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: fredoka;
-    background-color: #ffd97d;
-    color: #4b2e2e;
+  font-family: var(--fuente-base);
+  background-color: var(--fondo-claro);
+  color: var(--texto-principal);
+  line-height: 1.6;
 }
 
+/* ----------------------------------------------
+  HEADER & NAVIGATION (Responsive + Flex Layout)
+----------------------------------------------- */
 header {
-    background-color: #e9e4c9;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 20;
-    min-width: 300px;
-    
+  background-color: var(--jonquil);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 20;
 }
 
-.nav-principal a {
-    color: #2d5948;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-}
 .nav-principal {
-    display: flex;
-    gap: 17rem;
-}
-
-.nav-principal a:hover {
-    color: #da5c2b;
-}
-
-.hero {
-    text-align: center;
-    padding: 3rem 2rem;
-}
-
-.hero img {
-    max-width: 400px;
-}
-
-.hero h1 {
-    color: #2d5948;
-    font-size: 3rem;
-    margin: 1rem 0 0.5rem;
-}
-
-.hero p {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    color: #4b2e2e;
-}
-
-.botones {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.botones a {
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 20px;
-    font-weight: bold;
-    color: whitesmoke;
-}
-
-.jugar {
-    background-color: #da5c2b;
-}
-
-.conocer {
-    background-color: #c5a45a;
-    color: #2d2d2d;
-}
-
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 1.6rem;
-    }
-    .botones a {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-footer {
-    background-color: #e9e4c9;
-    text-align: center;
-}
-
-footer a {
-    color: #4b2e2e;
-}
-
-
-.juego-container {
-    background: #ffd97d;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,1);
-    padding: 2rem;
-    width: 400px;
-    min-width: 270px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.lumi-img {
-    width: 100px;
-    margin-bottom: 1rem;
-}
-
-.frase {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2d5948;
-    margin-bottom: 1.5rem;
-}
-
-.opciones {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.boton-opcion {
-    background-color: #da5c2b;
-    border: 2px solid #2d5948;
-    color: #2d5948;
-    font-size: 1rem;
-    padding: 1rem;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.boton-opcion:hover {
-    background-color: #a9c9d0;
-    color: #2d2d2d;
-}
-
-.feedback {
-    margin-top: 1.5rem;
-    font-size: italic;
-    background-color: #2ceca2;
-    padding: 1rem;
-    border-left: 5px solid #2d5948;
-    border-radius: 10px;
-    width: 100%;
-    display: none;
-}
-
-.controles {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-}
-
-.btn-control {
-    padding: 0.6rem 1.2rem;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.btn-back {
-    background-color: #c5a45a;
-    color: #2d5948;
-}
-
-.btn-next {
-    background-color: #da5c2b;
-    color: #fff;
-}
-
-
-
-/* Página Docentes */
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
-}
-
-
-h2 {
-    color: #2d5948;
-    text-align: center;
-    padding: 3rem 2rem;
-
-}
-
-ul {
-    padding-left: 1.5rem;
-}
-
-.caja {
-    background-color: #da5c2b;
-    border-left: 5px solid #2d5948;
-    border-radius: 10px;
-    margin: 15px 0;
-    padding: 15px 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.2s;
-    overflow: hidden;
-}
-
-.caja:hover {
-  background-color: whitesmoke;
-  transform: scale(1.01);
-}
-
-.contenido {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  margin-top: 10px;
-  color: #333;
-}
-.caja.activa .contenido {
-  max-height: 500px;
-}
-
-
-a {
-    color: #2d5948;
-    text-decoration: none;
-}
-
-
-/* Boton volver arriba */
-
-.scroll-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: transparent;
-    padding: 10px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.scroll-top img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-/* Página ¿Qué es? */
-
-.lumiazul img {
-    max-width: 400px;
-}
-
-/* Página ¿Cómo jugar? */
-
-
-.dialogo-contenedor {
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 2rem;
-  max-width: 900px;
-  margin: 2rem auto;
-  background: #fff8d0;
-  border-radius: 20px;
-  padding: 2rem 2rem 1.5rem 2rem;
-  box-shadow: 0 3px 14px rgba(0,0,0,0.05);
-}
-
-.dialogo-contenedor img {
-  width: 120px;
-  min-width: 90px;
-  max-width: 130px;
-  height: auto;
-  margin-top: 6px;
-  filter: drop-shadow(0 2px 8px #c5a45a50); 
-  border-radius: 16px;
-}
-
-.burbuja-lumi {
-  position: relative;
-  flex: 1 1 auto;
-  display: flex;
   align-items: center;
 }
 
-.dialogo-lumi {
-  font-size: 1.08rem;
-  color: #4b2e2e;
-  line-height: 1.6;
-  background: #ffd97d;
-  padding: 1rem 1.2rem;
-  border-radius: 22px;
-  box-shadow: 0 2px 7px rgba(223, 197, 90, 0.09);
-  margin-left: 0.5rem;
-  flex: 1 1 auto;
-  position: relative;
-}
-
-.dialogo-lumi h2 {
-  color: #2d5948;
-  margin-top: 0;
-}
-.dialogo-lumi a.jugar {
-  color: #e2d6d2;
+.nav-principal a {
+  color: var(--ucla-blue);
+  text-decoration: none;
   font-weight: bold;
-  text-decoration: underline;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: color 0.2s ease;
 }
 
-@media (max-width: 600px) {
-  .dialogo-contenedor {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.2rem 0.6rem;
-  }
-  .dialogo-contenedor img {
-    margin: 0 auto;
-    display: block;
-  }
-   .burbuja-lumi::before {
-    left: 30px;
-    top: -18px;
-    border-top: none;
-    border-bottom: 18px solid #fff;
-    border-right: 18px solid transparent;
-    border-left: 18px solid transparent;
-    width: 0;
-    height: 0;
-    /* El triangulito apunta arriba en mobile */
-  }
+.nav-principal a:hover {
+  color: var(--dogwood-rose);
 }
-
-/* Burbuja triangular a la izquierda */
-.burbuja-lumi::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: -22px;
-  top: 32px;
-  width: 0;
-  height: 0;
-  border-top: 18px solid transparent;
-  border-bottom: 18px solid transparent;
-  border-right: 22px solid #2d5948;
-  /* Sombra al triángulo */
-  filter: drop-shadow(-2px 2px 2px #c5a45a33);
-}
-
-/*
-.dialogo-lumi {
-    flex: 1;
-    background-color: #fff8d0;
-    border-left: 5px solid #2d5948;
-    padding: 1rem;
-    border-radius: 15px;
-    font-size: 1.1rem;
-    position: relative;
-    min-width: 250px;
-}
-.dialogo-lumi::before {
-    content: "\201C";
-    font-size: 3rem;
-    color: #c5a45a;
-    position: absolute;
-    top: -20px;
-    left: 10px;
-}
-*/
-/* Página Biblioteca */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff8d0;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: #2d5948;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: flex;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1e5a5;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Cuentos - cartas */
-
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.cuento-card {
-    background-color: #fff;
-    border-left: 5px solid #2d5948;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.cuento-card h3 {
-    margin-top: 0;
-    color: #2d5948;
-}
-
-.cuento-card p {
-    font-size: 0.95rem;
-}
-
-.cuento-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
-
-/* Etiquetas h3 en la página Biblioteca - Secciones*/
-
-h3 {
-    color: #2d5948;
-    text-align: center;
-    padding: 1rem 1rem;
-    font-size: 8rem;
-}
-/* Títulos de las obras */
-h4 {
-    color: #2d5948;
-    text-align: center;
-    padding: 1rem 1rem;
-}
-
-h1 {
-    color: #2d5948;
-    text-align: center;
-    padding: 1rem 1rem;
-    font-size: 10rem;
-}
-
-
-/* Menú hamburguesa */
 
 .menu-hamburguesa {
   display: none;
   background: none;
   border: none;
   font-size: 2rem;
-  color: #2d5948;
+  color: var(--ucla-blue);
   cursor: pointer;
-  padding: 0.2rem 0.7rem;
-  border-radius: 8px;
-}
-.menu-hamburguesa:focus {
-  outline: 2px solid #2d5948;
 }
 
-/* Menú desplegable */
 .menu-desplegable {
   display: none;
   flex-direction: column;
   position: absolute;
   top: 60px;
-  right: auto;
-  background: #fff8d0;
+  right: 20px;
+  background: var(--fondo-claro);
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.09);
   min-width: 170px;
   z-index: 100;
   padding: 0.6rem 0;
 }
+
 .menu-desplegable a {
-  color: #2d5948;
+  color: var(--ucla-blue);
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
@@ -509,17 +94,16 @@ h1 {
   transition: background 0.2s;
   border-radius: 6px;
 }
+
 .menu-desplegable a:hover {
-  background: #f1e5a5;
+  background: #fef0a6;
 }
 
-/* Mostrar menú desplegable en móvil */
 .menu-desplegable.activo {
   display: flex;
 }
 
-/* Responsive: esconder menú principal, mostrar hamburguesa */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .nav-principal {
     display: none;
   }
@@ -528,26 +112,670 @@ h1 {
   }
 }
 
-/* Contenedor de los dos juegos */
-
-.juegos-dobles {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-    margin: 2rem auto;
-    max-width: 1300px;
-    flex-wrap: wrap;
+/* ----------------------------------------------
+  HERO SECTION (Página de Inicio)
+----------------------------------------------- */
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: var(--ucla-blue);
+  color: white;
 }
 
-@media (max-width: 900px) {
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.hero img {
+  width: 220px;
+  margin-bottom: 1rem;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.botones a {
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  color: white;
+}
+
+.botones a.jugar {
+  background-color: var(--dogwood-rose);
+}
+
+.botones a.conocer {
+  background-color: var(--emerald);
+}
+
+.botones a:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .botones {
+    flex-direction: column;
+  }
+}
+
+/* ----------------------------------------------
+  SCROLL TOP BUTTON
+----------------------------------------------- */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.scroll-top img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-top:hover img {
+  transform: scale(1.2);
+}
+
+/* ----------------------------------------------
+  FOOTER
+----------------------------------------------- */
+footer {
+  background-color: var(--jonquil);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ucla-blue);
+}
+
+footer a {
+  color: var(--orange-pantone);
+  margin: 0 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------
+  MEDIAQUERIES ESPECÍFICOS MÓVIL + TABLET
+----------------------------------------------- */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 850px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 851px) {
+  body {
+    font-size: 18px;
+  }
+  .nav-principal {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nav-principal a {
+    display: inline-block;
+  }
+}
+
+/* ----------------------------------------------
+  SECCIONES INTERACTIVAS: juegos, tarjetas, formularios, diálogo Lumi
+----------------------------------------------- */
+.juego-container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+  max-width: 480px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.frase {
+  font-size: 1.5rem;
+  color: var(--ucla-blue);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.boton-opcion {
+  background-color: var(--orange-pantone);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton-opcion:hover {
+  background-color: var(--dogwood-rose);
+}
+
+.feedback {
+  background-color: var(--emerald);
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  color: white;
+  display: none;
+}
+
+.controles {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-control {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: var(--ucla-blue);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-control:hover {
+  background-color: var(--dogwood-rose);
+}
+
+/* Cartas Biblioteca */
+.cuento-card {
+  background-color: #ffffff;
+  border-left: 5px solid var(--ucla-blue);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.cuento-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.cuento-card h4 {
+  color: var(--dogwood-rose);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.cuento-card p {
+  font-size: 0.95rem;
+  color: var(--texto-principal);
+}
+
+/* Formulario de contacto */
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  padding: 0.8rem;
+  border: 2px solid var(--jonquil);
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+.form-contacto button {
+  background-color: var(--dogwood-rose);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-contacto button:hover {
+  background-color: var(--orange-pantone);
+}
+
+.mensaje-exito {
+  color: var(--emerald);
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Diálogo Lumi */
+.dialogo-contenedor {
+  display: flex;
+  gap: 1.5rem;
+  background: var(--fondo-claro);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  margin: 2rem auto;
+  max-width: 800px;
+  align-items: flex-start;
+}
+
+.dialogo-contenedor img {
+  width: 100px;
+  border-radius: 12px;
+}
+
+.dialogo-lumi {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  flex: 1;
+  color: var(--texto-principal);
+}
+
+.dialogo-lumi h2 {
+  color: var(--ucla-blue);
+}
+
+.dialogo-lumi a {
+  color: var(--dogwood-rose);
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .dialogo-contenedor {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .dialogo-contenedor img {
+    margin: auto;
+  }
+}
+
+.nav-principal ul {
+  display: flex;
+  gap: 14rem; /* Aumentamos el espacio */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-principal li {
+  position: relative;
+}
+
+/* Submenú desplegable vertical */
+.nav-principal .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background-color: var(--fondo-claro);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-top: 0.3rem;
+  min-width: 160px;
+  z-index: 10;
+  padding: 0.5rem 0;
+}
+
+.nav-principal .dropdown-content a {
+  padding: 0.7rem 1rem;
+  color: var(--ucla-blue);
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+}
+
+.nav-principal .dropdown-content a:hover {
+  background-color: #fef0a6;
+  color: var(--dogwood-rose);
+}
+
+/* Mostrar al hacer hover */
+.nav-principal li.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.caja {
+  background-color: var(--jonquil);
+  border-left: 6px solid var(--ucla-blue);
+  border-radius: 14px;
+  margin: 16px 0;
+  padding: 18px 22px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.caja:hover {
+  background-color: var(--orange-pantone);
+  transform: scale(1.02);
+  color: white;
+}
+
+.titulo {
+  font-weight: 600;
+  color: var(--ucla-blue);
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  margin-top: 10px;
+  color: #2d2d2d;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.caja.activa .contenido {
+  max-height: 500px; /* valor arbitrario suficientemente grande */
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--ucla-blue); /* o el color que estés usando para títulos */
+  margin: 2rem auto 1rem auto;
+}
+
+.card-docente {
+  background-color: #fffdf7;
+  border-left: 8px solid var(--ucla-blue);
+  border-radius: 16px;
+  padding: 1.5rem 1.8rem;
+  margin: 2rem auto;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  max-width: 800px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-docente:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.card-docente h2 {
+  text-align: center;
+  color: var(--ucla-blue);
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.card-docente p,
+.card-docente ul {
+  color: #2d2d2d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0.8rem 0 0 0;
+}
+
+.card-docente ul {
+  padding-left: 1.2rem;
+}
+
+.descargas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.btn-descarga {
+  background-color: var(--dogwood-pink);
+  color: rgb(223, 128, 20);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, background-color 0.2s;
+  max-width: 90%;
+  text-align: center;
+}
+
+.btn-descarga:hover {
+  background-color: var(--emerald-green);
+  transform: translateY(-2px);
+}
+
+/* sección de juegos */
+
+.juegos-dobles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem;
+}
+
+.juego-card {
+  background-color: #f1c40f;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 12px var(--dogwood-pink);
+  padding: 2rem;
+  width: 300px;
+  max-width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.juego-card:hover {
+  transform: scale(1.03);
+}
+
+.juego-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 1rem;
+  background-color: none
+  padding: 0.5rem;
+}
+
+.frase {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5rem;
+  color: var(--ucla-blue);
+  margin: 1rem 0;
+}
+
+.btn-jugar {
+  display: inline-block;
+  background-color: #d90368;
+  color: #fffdf7;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 3rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-jugar:hover {
+  background-color: yellowgreen
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
   .juegos-dobles {
     flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
   }
+
+  .juego-card {
+    width: 90%;
+  }
+}
+
+/* === Estilo para tarjetas del juego (juego1.html) === */
+
+.juego-container {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background-color: var(--orange-pantone);
+  border: 3px solid #00cc66ff; /* Emerald */
+  border-radius: 20px;
+  box-shadow: 0 0 25px #d90368ff, 0 0 15px rgb(209, 183, 77) inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  color: #ffffff;
+}
+
+.lumi-img {
+  width: 90px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 6px #2274a5ff);
+}
+
+.frase {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--ucla-blue) /* Jonquil */
+  text-shadow: 0 0 4px #f75c03ff;
+}
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.boton-opcion {
+  background: linear-gradient(45deg, #f75c03ff, #d90368ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.boton-opcion:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #f1c40fff;
+}
+
+.feedback {
+  display: none;
+  background-color: #00cc66ff;
+  color: #000000;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 0 12px #00cc66ff;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.btn-control {
+  background-color: #2274a5ff;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-control:hover {
+  background-color: #00cc66ff;
+}
+
+/* Responsive para móviles y tablets */
+@media (max-width: 600px) {
   .juego-container {
-    width: 95%;
-    max-width: 500px;
+    margin: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .frase {
+    font-size: 1.2rem;
+  }
+
+  .boton-opcion {
+    font-size: 0.95rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .btn-control {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
   }
 }

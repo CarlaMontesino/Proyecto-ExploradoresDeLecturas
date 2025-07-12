@@ -1,4 +1,4 @@
-/* Página del juego - muestra */
+/* Página del juego - muestra 
 
 function mostrarFeedback(opcion) {
     const feedback = document.getElementById('feedback');
@@ -9,6 +9,7 @@ function mostrarFeedback(opcion) {
     }
     feedback.style.display = 'block';
 }
+*/
 
 
 /* Página docentes, para que las cajas brinden la información de la actividad */
@@ -40,5 +41,21 @@ document.querySelectorAll('.menu-desplegable a').forEach(link => {
     document.getElementById('menuDesplegable').classList.remove('activo');
   });
 });
+
+//Formulario de contacto
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('formContacto');
+  const mensajeExito = document.getElementById('mensaje-exito');
+  if(form){
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      mensajeExito.textContent = "¡Gracias por tu mensaje! Te responderemos pronto 😊";
+      form.reset();
+      setTimeout(()=>mensajeExito.textContent = "", 4000);
+    });
+  }
+});
+
 
 

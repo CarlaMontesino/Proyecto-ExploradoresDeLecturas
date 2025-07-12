@@ -1,58 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>Exploradores de Lecturas - Para docentes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploradores de Lecturas</title>
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Favicon (opcional) -->
+  <!-- <link rel="icon" href="IMG/favicon.ico" type="image/x-icon" /> -->
 </head>
+
 <body>
 
-    <a href="#" class="scroll-top"> 
-        <img src="IMG/Lumi.png" alt="Volvamos arriba"> </a> 
-    
-     <header>
-        <nav class="nav-principal">
-            <a href="./index.html">Inicio</a>
-            <a href="./juego.html">¡Juguemos!</a>
-            <a href="./docentes.html">Recursos</a>
-            <a href="./comoJugar.html">Acerca de...</a>
-                <div class="dropdown">
-                 <a href="./Biblioteca.html">Biblioteca ▼</a>
-                    <div class="dropdown-content">
-                     <a href="Biblioteca.html">Cuentos</a>
-                     <a href="Biblioteca.html">Poesías</a>
-                     <a href="Biblioteca.html">Novelas</a>
-                     </div>
-                </div>
-        </nav>
-        
-        <button class="menu-hamburguesa" id="btnMenu" aria-label="Abrir menú">&#9776;</button>
+  <!-- Botón volver arriba -->
+  <a href="#" class="scroll-top" aria-label="Volver arriba">
+    <img src="IMG/Lumi.png" alt="Botón para volver arriba" />
+  </a>
 
-        <div class="menu-desplegable" id="menuDesplegable">
-            <a href="./index.html"> Inicio</a>
-            <a href="./juego.html">¡Juguemos!</a>   
-            <a href="./docentes.html">Recursos</a>
-            <a href="./comoJugar.html"> Acerca de...</a>
-            <a href="./Biblioteca.html">Biblioteca</a>
-        </div>
-    </header>
+  <header>
+    <nav class="nav-principal">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./juego.html">¡Juguemos!</a></li>
+        <li><a href="./docentes.html">Recursos</a></li>
+        <li><a href="./comoJugar.html">Acerca de...</a></li>
+        <li class="dropdown">
+          <a href="./Biblioteca.html">Biblioteca ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="Biblioteca.html">Cuentos</a></li>
+            <li><a href="Biblioteca.html">Poesías</a></li>
+            <li><a href="Biblioteca.html">Novelas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="menu-hamburguesa" id="btnMenu" aria-label="Abrir menú">&#9776;</button>
+
+    <div class="menu-desplegable" id="menuDesplegable" aria-label="Menú móvil">
+      <a href="./index.html">Inicio</a>
+      <a href="./juego.html">¡Juguemos!</a>
+      <a href="./docentes.html">Recursos</a>
+      <a href="./comoJugar.html">Acerca de...</a>
+      <a href="./Biblioteca.html">Biblioteca</a>
+    </div>
+  </header>
     
     <section class="hero">
          <h1> Exploradores de Lecturas</h1>
          <img src="IMG/Lumi-Explica.png" alt="Lumi explica">
      </section>
 
-    <div class="container">
+    <main class="container">
+        <div class="card-docente">
         <h2>Para docentes</h2>
         <p>
             "Exploradores de Lecturas" es un recurso pensado para acompañar prácticas pedagógicas vinculadas a la lectura, la reflexión crítica y la formación ciudadana desde edades tempranas.
-        
         </p>
+        </div>
 
+        <div class="card-docente">
         <h2>¿Cómo puede utilizarse en el aula?</h2>
         <ul>
             <li>
@@ -65,7 +80,9 @@
                 En talleres extracurrículares o proyectos institucionales
             </li>
         </ul>
+        </div>
 
+        <div class="card-docente">
         <h2>¿Qué competencias desarrolla?</h2>
         <ul>
             <li>
@@ -76,7 +93,7 @@
             <li>Empatía y expresión de emociones</li>
             <li>Valoración de la diversidad y los derechos humanos</li>
         </ul>
-
+        </div>
         <h2>Actividades sugeridas</h2>
 
         <div class=caja onclick="toggleContenido(this)">
@@ -100,18 +117,16 @@
             </div>
         </div>
 
-        <h2>Recursos para descargar</h2>
-        <ul>
-            <li>
-                <a href="#">Lista de frases y actividades imprimibles</a>
-            </li> 
-            <br>
-            <li>
-                <a href="#"> Mapa de exploradores de lecturas</a>
-            </li>
-            <br>
-        </ul>
-    </div>
+        <div class="descargas">
+         <a href="#" class="btn-descarga" download>
+         📄 Lista de frases y actividades imprimibles
+        </a>
+        <a href="#" class="btn-descarga" download>
+         🗺️ Mapa de exploradores de lecturas
+        </a>
+        </div>
+
+    </main>
 
      <footer>
         © 2025 – Desarrollado por Carla Montesino
