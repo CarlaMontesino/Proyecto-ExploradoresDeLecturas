@@ -786,7 +786,7 @@ h2 {
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap');
 
 /* GRID principal para secciones de biblioteca */
-.categoria-biblioteca {
+.categoria-biblioteca-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
@@ -795,16 +795,6 @@ h2 {
   margin: auto;
 }
 
-:root {
-  --ucla-blue: #2274a5;
-  --orange-pantone: #f75c03;
-  --jonquil: #f1c40f;
-  --dogwood-rose: #d90368;
-  --emerald: #00cc66;
-  --fondo-claro: #fff8d0;
-  --texto-principal: #2d2d2d;
-  --fuente-base: 'Fredoka', sans-serif;
-}
 
 /* Tarjeta contenedora */
 .categoria-card {
@@ -843,6 +833,7 @@ h2 {
 
 /* Botón */
 .boton-explorar {
+  margin-top: auto;;
   display: inline-block;
   background-color: #d90368; /* Dogwood Rose */
   color: #fff;
@@ -863,12 +854,12 @@ h2 {
 
 /* Responsive mejorado */
 @media (max-width: 768px) {
-  .biblioteca-grid {
+  .categoria-biblioteca-grid {
     grid-template-columns: 1fr;
     padding: 1rem;
   }
 
-  .biblioteca-card {
+  .categoria-card {
     padding: 1.5rem 1rem;
   }
 }

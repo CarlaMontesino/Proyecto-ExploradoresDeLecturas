@@ -33,8 +33,43 @@ const preguntas = [
           { texto: "Una biblioteca silenciosa", feedback: "¡Sos un lector clásico!" },
           { texto: "Un rincón con almohadones y luz cálida", feedback: "¡Sos un lector acogedor!" }
         ]
-      }
-    ];
+      },
+      {
+        frase: "¿Leés un libro a la vez o varios al mismo tiempo?",
+        opciones: [
+          { texto: "Uno solo, me gusta enfocarme", feedback: "¡Sos un lector organizado y profundo!" },
+          { texto: "Varios, según el día", feedback: "¡Sos un lector versátil y curioso!" }
+        ]
+     },
+     {
+        frase: "¿Te gusta releer tus libros favoritos?",
+        opciones: [
+         { texto: "Sí, los releo muchas veces", feedback: "¡Sos un lector nostálgico y apasionado!" },
+         { texto: "Prefiero descubrir cosas nuevas", feedback: "¡Sos un lector aventurero y explorador!" }
+        ]
+    },
+    {
+        frase: "¿Compartís lo que leés con otras personas?",
+        opciones: [
+         { texto: "¡Sí! Me encanta recomendar", feedback: "¡Sos un lector social y generoso!" },
+         { texto: "Prefiero quedármelo para mí", feedback: "¡Sos un lector introspectivo y personal!" }
+       ]
+    },
+    {
+        frase: "¿Leés solo libros o también historietas y cómics?",
+        opciones: [
+          { texto: "¡Todo tipo de lectura!", feedback: "¡Sos un lector abierto y creativo!" },
+         { texto: "Prefiero solo libros", feedback: "¡Sos un lector clásico y enfocado!" }
+        ]
+    },
+    {
+        frase: "¿Cómo elegís qué leer?",
+        opciones: [
+         { texto: "Por la portada o ilustraciones", feedback: "¡Sos un lector visual e intuitivo!" },
+         { texto: "Por la historia o recomendación", feedback: "¡Sos un lector analítico y curioso!" }
+        ]
+}
+];
 
     let currentIndex = 0;
     const history = [];
