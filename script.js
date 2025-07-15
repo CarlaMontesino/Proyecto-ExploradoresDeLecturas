@@ -138,6 +138,34 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(error => console.error('Error al cargar las novelas:', error));
 });
 
+// Carrousel de imágenes index
+
+let slideIndex = 0;
+  const slides = document.querySelectorAll('.carrusel-slide');
+  const dots = document.querySelectorAll('.dot');
+
+  function mostrarSlide(index) {
+    slideIndex = index;
+    actualizarCarrusel();
+  }
+
+  function actualizarCarrusel() {
+    slides.forEach((slide, i) => {
+      slide.style.display = (i === slideIndex) ? 'block' : 'none';
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === slideIndex);
+    });
+  }
+
+  function avanzarSlide() {
+    slideIndex = (slideIndex + 1) % slides.length;
+    actualizarCarrusel();
+  }
+
+  // Inicializar carrusel
+  actualizarCarrusel();
+  setInterval(avanzarSlide, 5000);
 
 
 

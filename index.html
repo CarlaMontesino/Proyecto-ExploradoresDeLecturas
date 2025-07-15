@@ -25,14 +25,16 @@
   </a>
 
   <header>
+
+    <div class="sprite-bienvenida" role="img" aria-label="Bienvenidos a Exploradores de Lecturas"></div>
+
     <nav class="nav-principal">
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./juego.html">¡Juguemos!</a></li>
-        <li><a href="./docentes.html">Recursos</a></li>
-        <li><a href="./comoJugar.html">Acerca de...</a></li>
-        <li><a href="./Biblioteca.html">Biblioteca</a></li>
-      </ul>
+        <ul>
+        <a href="./index.html" class="boton-nav">Inicio</a>
+        <a href="./juego.html" class="boton-nav">¡Juguemos!</a>
+        <a href="./docentes.html" class="boton-nav">Recursos</a>
+        <a href="./comoJugar.html" class="boton-nav">Acerca de...</a>
+        <a href="./Biblioteca.html" class="boton-nav">Biblioteca</a>
     </nav>
 
     <button class="menu-hamburguesa" id="btnMenu" aria-label="Abrir menú">&#9776;</button>
@@ -47,6 +49,26 @@
   </header>
 
   <main>
+    <!-- Carrusel con autoplay + indicadores móviles -->
+    <section class="carrusel-container">
+      <div class="carrusel-slide fade">
+       <img src="IMG/CarrouselUno.svg" alt="Primera imagen carrusel">
+      </div>
+    <div class="carrusel-slide fade">
+      <img src="IMG/CarrouselDos.svg" alt="Segunda imagen carrusel">
+    </div>
+    <div class="carrusel-slide fade">
+      <img src="IMG/CarrouselTres.svg" alt="Tercera imagen carrusel">
+    </div>
+
+  <!-- Indicadores solo en móviles -->
+      <div class="indicadores-carrusel">
+        <span class="dot" onclick="mostrarSlide(0)"></span>
+        <span class="dot" onclick="mostrarSlide(1)"></span>
+        <span class="dot" onclick="mostrarSlide(2)"></span>
+      </div>
+    </section>
+
     <section class="hero">
       <h1>Exploradores de Lecturas</h1>
       <img src="IMG/LumiBienvenida.png" alt="Lumi saludando" />
@@ -59,6 +81,10 @@
         <a class="jugar" href="./juego.html">Jugar ahora</a>
         <a class="conocer" href="./comoJugar.html">Conocer más</a>
       </div>
+    </section>
+
+    <section class="banner-explorador">
+      <div class="fondo-caminante"></div>
     </section>
   </main>
 

@@ -10,6 +10,7 @@
   --fondo-claro: #fff8d0;
   --texto-principal: #2d2d2d;
   --fuente-base: 'Fredoka', sans-serif;
+  --fondo-oscuro: #010830;
 }
 
 * {
@@ -33,7 +34,7 @@ body {
   HEADER & NAVIGATION (Responsive + Flex Layout)
 ----------------------------------------------- */
 header {
-  background-color: var(--jonquil);
+  background-color: var(--fondo-oscuro);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -60,6 +61,32 @@ header {
 
 .nav-principal a:hover {
   color: var(--dogwood-rose);
+}
+
+.boton-nav {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--orange-pantone);
+  border: none;
+}
+
+.boton-nav:hover {
+  background-color: #8bfffb; /* Azul neón */
+  color: #2d2d2d;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Modo oscuro o fondo azul oscuro */
+header {
+  background-color: #0d0d2b; /* Fondo para buen contraste */
 }
 
 .menu-hamburguesa {
@@ -143,7 +170,7 @@ header {
 .hero {
   text-align: center;
   padding: 3rem 2rem;
-  background-color: var(--ucla-blue);
+  background-color: #010830;
   color: white;
 }
 
@@ -230,7 +257,7 @@ header {
   FOOTER
 ----------------------------------------------- */
 footer {
-  background-color: var(--jonquil);
+  background-color: var(--fondo-oscuro);
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
@@ -1104,5 +1131,102 @@ main {
   transform: scale(1.05);
   color: #2d2d2d;
 }
+
+/* carrusel */
+
+.carrusel-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #222;
+}
+
+.carrusel-slide {
+  display: none;
+  position: relative;
+}
+
+.carrusel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.fade {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+.indicadores-carrusel {
+  text-align: center;
+  padding: 1rem 0;
+  display: none;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 4px;
+  background-color: lab(3.39% 0.3 0.1);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #f75c03;
+}
+
+  /* Mostrar indicadores solo en pantallas menores a 768px */
+@media (max-width: 768px) {
+  .indicadores-carrusel {
+  display: block;
+  }
+}
+
+/* Banner explorador con fondo animado */
+
+.banner-explorador {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  background-color: #0d0d1a; /* oscuro techno-futurista */
+}
+
+.fondo-caminante {
+  width: 200%;
+  height: 100%; /* 🔧 ESTA línea es clave */
+  background-image: url('IMG/banner-corriendo.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: 0 bottom;
+  animation: caminarFondo 15s linear infinite;
+}
+
+
+@keyframes caminarFondo {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100%;
+  }
+}
+
+
+.fondo-caminante {
+  border: 2px dashed none;
+}
+
+/* Banner de bienvenida con sprite animado */
+
 
 
