@@ -1,13 +1,13 @@
 
 
 
-/* Página docentes, para que las cajas brinden la información de la actividad */
+/* Página recursos, para que las cajas brinden la información de la actividad */
 
 function toggleContenido(caja) {
   caja.classList.toggle('activa');
 }
 
-// Saludo es muy molesto
+// Saludo (es muy molesto no se por qué)
 /* 
 const nombreUsuario = prompt("¡Hola, mi nombre es Lumi! ¿Cómo te llamas?");
 
@@ -31,7 +31,7 @@ document.querySelectorAll('.menu-desplegable a').forEach(link => {
   });
 });
 
-// ⬇ NUEVO BLOQUE que cierra al hacer clic fuera
+//  cierra al hacer clic fuera
 document.addEventListener('click', function (event) {
   const menu = document.getElementById('menuDesplegable');
   const btn = document.getElementById('btnMenu');
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       data.forEach(poesia => {
         const card = document.createElement('div');
-        card.className = 'tarjeta-cuento'; // reutilizamos estilos
+        card.className = 'tarjeta-cuento'; // 
         card.innerHTML = `
           <img src="${poesia.imagen}" alt="Imagen de ${poesia.titulo}">
           <h4>${poesia.titulo}</h4>
