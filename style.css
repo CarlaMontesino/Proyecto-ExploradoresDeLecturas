@@ -1115,59 +1115,28 @@ main {
 }
 
 /* Estilo general del bloque formulario de contacto */
-.contacto-section {
+.form-contacto {
+  background-color: var(--fondo-oscuro); /* fondo oscuro */
+  max-width: 500px;
+  margin: 3rem auto;
   padding: 2rem;
-  background-color: var(--fondo-claro);
-}
-
-/* Contenedor visual centrado */
-.contenedor-contacto {
-  background: var(--fondo-claro);
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3); /* rosa neón */
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 2.5rem 2rem;
+  box-shadow: 0 0 15px #8bfffb88;
+  color: var(--texto-principal);
+  font-family: 'Fredoka', sans-serif;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  animation: flotar 6s ease-in-out infinite;
+  position: relative;
 }
 
-/* Animación sutil de "flotación" */
-@keyframes flotar {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.contenedor-contacto h2 {
-  font-family: var(--fuente-base);
-  font-size: 1.8rem;
-  color: var(--ucla-blue);
-  text-shadow: 1px 1px #2d2d2d;
-}
-
-.contenedor-contacto p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1rem;
-  color: #444;
-  margin-bottom: 1rem;
-}
-
-.contenedor-contacto img {
+/* Imagen de Lumi con efecto flotante */
+.form-contacto img {
   width: 120px;
   filter: drop-shadow(0 0 4px #f75c03); /* sombra naranja brillante */
   animation: flotarLumi 4s ease-in-out infinite;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
 }
 
-/* Efecto flotante más suave para Lumi */
 @keyframes flotarLumi {
   0%, 100% {
     transform: translateY(0);
@@ -1177,7 +1146,21 @@ main {
   }
 }
 
-/* Estilos para inputs y textarea */
+/* Título y subtítulo */
+.form-contacto h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--ucla-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.form-contacto p {
+  font-size: 1rem;
+  color: whitesmoke;
+  margin-bottom: 2rem;
+}
+
+/* Inputs y textarea */
 .form-contacto input,
 .form-contacto textarea {
   border: 2px solid #ffd700; /* dorado suave */
@@ -1188,6 +1171,7 @@ main {
   font-size: 1rem;
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
   transition: border-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 1rem;
 }
 
 .form-contacto input:focus,
@@ -1216,6 +1200,7 @@ main {
   transform: scale(1.05);
   color: #2d2d2d;
 }
+
 
 /* carrusel */
 
