@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: var(--fuente-base);
-  background-color: var(--fondo-claro);
+  background-color: var(--fondo-oscuro);
   color: var(--texto-principal);
   line-height: 1.6;
 }
@@ -475,50 +475,111 @@ footer a:hover {
 }
 
 /* Diálogo Lumi */
+
 .dialogo-contenedor {
   display: flex;
   gap: 1.5rem;
-  background: var(--fondo-claro);
+  background: rgba(10, 10, 50, 0.8); /* Fondo oscuro con leve transparencia */
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 12px rgba(139, 255, 251, 0.2); /* luz azul cian suave */
   margin: 2rem auto;
-  max-width: 800px;
+  max-width: 850px;
   align-items: flex-start;
+  backdrop-filter: blur(4px); /* efecto de vidrio suave */
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Animación para Lumi saludando */
 .dialogo-contenedor img {
-  width: 100px;
-  border-radius: 12px;
+  width: 110px;
+  animation: saludarLumi 2.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px #8bfffb); /* resplandor cian */
+}
+
+/* Keyframes */
+@keyframes saludarLumi {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 .dialogo-lumi {
-  background: var(--fondo-claro);
-  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.3); /* leve caja para contraste */
+  padding: 1.2rem 1.6rem;
   border-radius: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
   flex: 1;
   color: var(--texto-principal);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.dialogo-lumi h2 {
-  color: var(--ucla-blue);
+.dialogo-lumi h3 {
+  color: whitesmoke;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .dialogo-lumi a {
   color: var(--dogwood-rose);
   font-weight: bold;
+  text-decoration: underline;
 }
+
+.dialogo-lumi h3.titulo-lumi {
+  color: #8bfffb;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px #8bfffb;
+}
+
+.dialogo-lumi p {
+  font-family: 'Fredoka', sans-serif;
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.dialogo-lumi p strong {
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+.dialogo-lumi a.jugar {
+  color: #ff69b4;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.dialogo-lumi a.jugar:hover {
+  color: #8bfffb;
+}
+
 
 @media (max-width: 600px) {
   .dialogo-contenedor {
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.2rem;
   }
+
   .dialogo-contenedor img {
     margin: auto;
   }
+
+  .dialogo-lumi {
+    text-align: center;
+  }
 }
+
 
 .nav-principal ul {
   display: flex;
@@ -1219,10 +1280,10 @@ main {
 
 .banner-explorador {
   width: 100%;
-  height: 100px;
+  height: 60px;
   overflow: hidden;
   position: relative;
-  background-color: #0d0d1a; /* oscuro techno-futurista */
+  background-color: #0d0d1a;
 }
 
 .fondo-caminante {
@@ -1250,7 +1311,60 @@ main {
   border: 2px dashed none;
 }
 
-/* Banner de bienvenida con sprite animado */
+/* section-infoexploradores index.html */
+
+.info-exploradores {
+  background-color: var(--fondo-oscuro);
+  color: white;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.info-exploradores h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 2rem;
+   text-shadow: 0 0 4px var(--dogwood-rose)
+}
+
+.contenedor-cajas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.caja-info {
+  background-color: #11123d;
+  border: 2px solid var(--azul-ucla);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(139, 255, 251, 0.1);
+}
+
+.caja-info:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 20px rgba(139, 255, 251, 0.4);
+}
+
+.caja-info img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.caja-info p {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f5f5f5;
+}
+
 
 
 
