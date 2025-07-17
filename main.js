@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  cargarJSON('data/poesias.JSON', 'galeria-poesias');
-  cargarJSON('data/novelas.JSON', 'galeria-novelas');
+  cargarJSON('./poesias.JSON', 'poesias-galeria');
+  cargarJSON('./novelas.JSON', 'novelas-galeria');
   cargarJSON('./cuentos.JSON', 'cuentos-galeria');
 });
 
