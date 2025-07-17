@@ -183,16 +183,19 @@ function cargarJSON(url, idGaleria) {
   if (!galeria) return;
 
   fetch(url)
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+      return response.json();
+    })
     .then(data => {
-      data.forEach(cuento => {
+      data.forEach(item => {
         const card = document.createElement('div');
         card.className = 'tarjeta-cuento';
         card.innerHTML = `
-          <IMG src="${cuento.imagen}" alt="Portada de ${cuento.titulo}">
-          <h4>${cuento.titulo}</h4>
-          <p><strong>Autor:</strong> ${cuento.autor}</p>
-          <p>${cuento.descripcion}</p>
+          <img src="${item.imagen}" alt="Portada de ${item.titulo}" class="portada">
+          <h4>${item.titulo}</h4>
+          <p><strong>Autor:</strong> ${item.autor}</p>
+          <p>${item.descripcion}</p>
         `;
         galeria.appendChild(card);
       });
@@ -201,4 +204,5 @@ function cargarJSON(url, idGaleria) {
       console.error(`Error al cargar ${url}:`, error);
     });
 }
+
 
