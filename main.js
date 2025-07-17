@@ -15,7 +15,7 @@ function cargarJSON(url, idGaleria) {
         const card = document.createElement('div');
         card.className = 'tarjeta-cuento';
         card.innerHTML = `
-          <img src="${cuento.imagen}" alt="Portada de ${cuento.titulo}">
+          <IMG src="${cuento.imagen}" alt="Portada de ${cuento.titulo}">
           <h4>${cuento.titulo}</h4>
           <p><strong>Autor:</strong> ${cuento.autor}</p>
           <p>${cuento.descripcion}</p>
