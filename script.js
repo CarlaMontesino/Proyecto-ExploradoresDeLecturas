@@ -169,13 +169,23 @@ let slideIndex = 0;
   actualizarCarrusel();
   setInterval(avanzarSlide, 5000);
 
+  
 // Cargar JSON en la galería de cuentos, poesías y novelas
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  cargarJSON('./poesias.JSON', 'poesias-galeria');
-  cargarJSON('./novelas.JSON', 'novelas-galeria');
-  cargarJSON('./cuentos.JSON', 'cuentos-galeria');
+  const rutas = {
+    'cuentos.html': { json: './cuentos.JSON', contenedor: 'cuentos-galeria' },
+    'novelas.html': { json: './novelas.JSON', contenedor: 'novelas-galeria' },
+    'poesias.html': { json: './poesias.JSON', contenedor: 'poesias-galeria' }
+  };
+
+  const paginaActual = window.location.pathname.split('/').pop();
+  const datos = rutas[paginaActual];
+
+  if (!datos) return; // Si no es una de las 3 páginas, no hace nada
+
+  cargarJSON(datos.json, datos.contenedor);
 });
 
 function cargarJSON(url, idGaleria) {
@@ -196,6 +206,7 @@ function cargarJSON(url, idGaleria) {
           <h4>${item.titulo}</h4>
           <p><strong>Autor:</strong> ${item.autor}</p>
           <p>${item.descripcion}</p>
+          <a href="${item.linkLectura}" class="btn-leer">📖 Leer</a>
         `;
         galeria.appendChild(card);
       });
@@ -204,5 +215,6 @@ function cargarJSON(url, idGaleria) {
       console.error(`Error al cargar ${url}:`, error);
     });
 }
+
 
 
