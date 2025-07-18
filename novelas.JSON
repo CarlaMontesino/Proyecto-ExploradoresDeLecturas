@@ -17,21 +17,21 @@
     "titulo": "Coraline",
     "autor": "Neil Gaiman",
     "descripcion": "Una historia misteriosa y valiente sobre atravesar el miedo.",
-    "imagen": "IMG/coraline.jpg",
+    "imagen": "IMG/portada.coraline.jpg",
     "linkLectura": "#"
   },
   {
     "titulo": "El diario de Ana Frank",
     "autor": "Ana Frank",
     "descripcion": "Una obra íntima y conmovedora escrita desde el encierro.",
-    "imagen": "IMG/ana-frank.jpg",
+    "imagen": "IMG/diario-de-anne-frank.jpg",
     "linkLectura": "#"
   },
   {
     "titulo": "La invención de Morel",
     "autor": "Adolfo Bioy Casares",
     "descripcion": "Una novela filosófica y fantástica sobre el tiempo, la realidad y el amor.",
-    "imagen": "IMG/morel.jpg",
+    "imagen": "IMG/la-invencion-de-morel.jpg",
     "linkLectura": "#"
   }
 ]
