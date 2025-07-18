@@ -815,31 +815,56 @@ h2 {
   max-width: 480px;
   margin: 2rem auto;
   padding: 2rem 1.5rem;
-  background-color: var(--orange-pantone);
-  border: 3px solid #00cc66ff; /* Emerald */
-  border-radius: 20px;
-  box-shadow: 0 0 25px #d90368ff, 0 0 15px rgb(209, 183, 77) inset;
+  background: linear-gradient(135deg, #3d2c8d, #241b60);
+  border: 4px solid #00cc66ff;
+  border-radius: 24px;
+  box-shadow:
+    0 0 12px rgb(115, 9, 142),
+    0 0 18px #ff69b4,
+    0 0 24px #00cc66ff inset;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   font-family: 'Fredoka', sans-serif;
   color: #ffffff;
+  animation: latido 3s ease-in-out infinite;
 }
+
+@keyframes latido {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 12px #f75c03ff, 0 0 18px #ff69b4, 0 0 24px #00cc66ff inset;
+  }
+  50% {
+    transform: scale(1.01);
+    box-shadow: 0 0 16px #f75c03ff, 0 0 22px #ff69b4, 0 0 30px #00cc66ff inset;
+  }
+}
+
 
 .lumi-img {
   width: 90px;
   margin-bottom: 1rem;
   filter: drop-shadow(0 0 6px #2274a5ff);
+  animation: flotar 3s ease-in-out infinite;
 }
 
-.frase {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: var(--ucla-blue);
-  text-shadow: 0 0 4px #f75c03ff;
+@keyframes flotar {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
 }
+
+
+.frase {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: orbitron, sans-serif;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  text-shadow: 0 0 6px #ff69b4;
+}
+
 
 .opciones {
   display: flex;
@@ -858,13 +883,19 @@ h2 {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 0 0 8px #f1c40f;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .boton-opcion:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #f1c40fff;
+  box-shadow: 0 0 12px #f1c40fff, 0 0 20px #ff69b4;
 }
+
+.boton-opcion:active {
+  transform: scale(0.95);
+}
+
 
 .feedback {
   display: none;
@@ -875,7 +906,21 @@ h2 {
   box-shadow: 0 0 12px #00cc66ff;
   margin-top: 1rem;
   font-style: italic;
+  animation: aparecerFeedback 0.4s ease-out forwards;
+  opacity: 0;
 }
+
+@keyframes aparecerFeedback {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
 .controles {
   display: flex;
@@ -1349,6 +1394,39 @@ main {
   line-height: 1.5;
   color: #f5f5f5;
 }
+/*
+body {
+  background: linear-gradient(-45deg, #090c42, #0a1e5e, #1f0a40);
+  background-size: 400% 400%;
+  animation: fondoAnimado 20s ease infinite;
+}
+
+@keyframes fondoAnimado {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+
+.lumi-container {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+.ojo {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 38px;
+  transition: transform 0.1s ease;
+}
+
+.ojo-izquierdo { left: 20px; }
+.ojo-derecho  { left: 50px; }
+*/
 
 
 

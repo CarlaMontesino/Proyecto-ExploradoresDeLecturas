@@ -169,7 +169,7 @@ let slideIndex = 0;
   actualizarCarrusel();
   setInterval(avanzarSlide, 5000);
 
-  
+
 // Cargar JSON en la galería de cuentos, poesías y novelas
 
 
@@ -215,6 +215,7 @@ function cargarJSON(url, idGaleria) {
       console.error(`Error al cargar ${url}:`, error);
     });
 }
+
 
 
 
