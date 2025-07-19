@@ -1,45 +1,83 @@
 [
   {
-    "titulo": "El Principito",
-    "autor": "Antoine de Saint-Exupéry",
-    "descripcion": "Un cuento poético sobre la mirada de los niños, los vínculos y lo invisible.",
-    "imagen": "IMG/Portada-Principito.webp",
-    "linkLectura": "#"
+    "titulo": "La vuelta al mundo",
+    "autor": "Javier Villafañe",
+    "año": 2022,
+    "descripcion": "Santiago, un niño aventurero, sale de su casa en triciclo decidido a dar la vuelta al mundo. En el camino se le unen un perro y un gato, y juntos viven un pequeño viaje lleno de curiosidad y amistad.",
+    "imagen": "IMG/la-vuelta-al-mundo.jpg",
+    "linkLectura": "https://www.argentina.gob.ar/sites/default/files/2022/11/p100_la_vuelta_al_mundo_20x28_micro.pdf",
+    "fuente": "https://www.argentina.gob.ar/educacion/historiasxleer"
   },
   {
-    "titulo": "Caperucita Roja",
-    "autor": "Hermanos Grimm",
-    "descripcion": "Una niña, un lobo y una advertencia que atraviesa generaciones.",
-    "imagen": "IMG/caperucita.jpg",
-    "linkLectura": "#"
+    "titulo": "Carnaval en el zoo",
+    "autor": "Fabián Sevilla",
+    "año": 2022,
+    "descripcion": "El rey de los animales organiza un gran baile de disfraces en el zoológico. Los animales eligen máscaras y cambian de piel por un día en una fiesta llena de humor y juego.",
+    "imagen": "IMG/carnaval-en-el-zoo.jpg",
+    "linkLectura": "https://www.argentina.gob.ar/sites/default/files/2022/11/p101_carnaval_en_el_zoo_20x28_micro.pdf",
+    "fuente": "https://www.argentina.gob.ar/educacion/historiasxleer"
   },
   {
-    "titulo": "Pinocho",
-    "autor": "Carlo Collodi",
-    "descripcion": "El muñeco de madera que quería convertirse en un niño de verdad.",
-    "imagen": "IMG/pinocho.jpg",
-    "linkLectura": "#"
+    "titulo": "Bicho Raro",
+    "autor": "Graciela Montes",
+    "año": 1987,
+    "descripcion": "En una plaza aparece un animal extraño, un 'bicho raro'. Con humor, se narra cómo la ciudad entera reacciona ante lo desconocido. Ideal para hablar sobre la diversidad y la aceptación.",
+    "imagen": "IMG/bicho-raro.jpg",
+    "linkLectura": "https://www.bnm.me.gov.ar/historiasxleer/bicho_raro.pdf",
+    "fuente": "https://www.argentina.gob.ar/educacion/historiasxleer"
   },
   {
-    "titulo": "La Sirenita",
-    "autor": "Hans Christian Andersen",
-    "descripcion": "Una historia de amor y sacrificio bajo el mar.",
-    "imagen": "IMG/sirenita.jpg",
-    "linkLectura": "#"
+    "titulo": "La casa del árbol",
+    "autor": "Iris Rivera",
+    "año": 2022,
+    "descripcion": "Un grupo de amigos construye una casa en un árbol como refugio de sueños compartidos. Una historia sobre la amistad, la imaginación y la cooperación.",
+    "imagen": "IMG/la-casa-del-arbol.jpg",
+    "linkLectura": "https://www.educ.ar/recursos/146928/la-casa-del-arbol",
+    "fuente": "https://www.argentina.gob.ar/educacion/historiasxleer"
   },
   {
-    "titulo": "Alicia en el País de las Maravillas",
-    "autor": "Lewis Carroll",
-    "descripcion": "Una niña curiosa cae en una madriguera y entra en un mundo de lógica retorcida.",
-    "imagen": "IMG/alicia.jpg",
-    "linkLectura": "#"
+    "titulo": "¿Lobo está?",
+    "autor": "Sandra Comino",
+    "año": 2022,
+    "descripcion": "Ámbar entabla una amistad inesperada con un 'lobo' vecino en un edificio urbano. Un cuento que transforma un juego tradicional en una historia mágica sobre emociones y confianza.",
+    "imagen": "IMG/lobo-esta.jpg",
+    "linkLectura": "https://www.argentina.gob.ar/educacion/historiasxleer/lobo-esta",
+    "fuente": "https://www.argentina.gob.ar/educacion/historiasxleer"
   },
   {
-    "titulo": "Peter Pan",
-    "autor": "J. M. Barrie",
-    "descripcion": "El niño que no quería crecer y su mundo mágico: Nunca Jamás.",
-    "imagen": "IMG/peterpan.jpg",
-    "linkLectura": "#"
+    "titulo": "Un plan maestro",
+    "autor": "Graciela Repún",
+    "año": 2022,
+    "descripcion": "Pablo y sus amigos notan que su maestra llega de mal humor. Traman un plan para descubrir qué le pasa y ayudarla, aprendiendo algo valioso sobre la empatía.",
+    "imagen": "IMG/plan-maestro.jpg",
+    "linkLectura": "https://www.neuquen.edu.ar/plan-maestro",
+    "fuente": "https://www.argentina.gob.ar/educacion/historiasxleer"
+  },
+  {
+    "titulo": "Como si el ruido pudiera molestar",
+    "autor": "Gustavo Roldán",
+    "año": 2022,
+    "descripcion": "En un monte chaqueño, los animales dejan de hacer ruido. Un cuento casi poético que transmite el valor del silencio compartido, ideal para la educación emocional.",
+    "imagen": "IMG/como-si-el-ruido.jpg",
+    "linkLectura": "https://www.bnm.me.gov.ar/historiasxleer/como_si_el_ruido.pdf",
+    "fuente": "https://www.argentina.gob.ar/educacion/historiasxleer"
+  },
+  {
+    "titulo": "Un decreto incomprendido",
+    "autor": "Liliana Bodoc",
+    "año": 2022,
+    "descripcion": "Severo Cuasimorto crea un cargo inventado y emite un decreto disparatado para 'mejorar' la ciudad. Un cuento lleno de humor que invita a reflexionar sobre las normas absurdas.",
+    "imagen": "IMG/decreto-incomprendido.jpg",
+    "linkLectura": "https://www.bnm.me.gov.ar/historiasxleer/decreto_incomprendido.pdf",
+    "fuente": "https://www.argentina.gob.ar/educacion/historiasxleer"
+  },
+  {
+    "titulo": "El último entrenador",
+    "autor": "Juan Sasturain",
+    "año": 2022,
+    "descripcion": "En un potrero barrial, los chicos conocen a Valentín, un viejo entrenador que les transmite valores a través del fútbol. Una historia de pasión, respeto y transmisión generacional.",
+    "imagen": "IMG/el-ultimo-entrenador.jpg",
+    "linkLectura": "https://www.bnm.me.gov.ar/historiasxleer/el_ultimo_entrenador.pdf",
+    "fuente": "https://www.argentina.gob.ar/educacion/historiasxleer"
   }
 ]
-

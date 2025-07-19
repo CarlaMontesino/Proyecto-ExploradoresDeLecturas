@@ -1,37 +1,65 @@
 [
   {
-    "titulo": "Matilda",
-    "autor": "Roald Dahl",
-    "descripcion": "Una niña brillante con poderes especiales y una gran pasión por la lectura.",
-    "imagen": "IMG/matilda.jpg",
-    "linkLectura": "#"
+    "titulo": "El Club Limonada",
+    "autor": "María Fernanda Heredia",
+    "año": 2024,
+    "descripcion": "Tres amigos fundan un club para superar la 'mala suerte en el amor'. Con humor y complicidad, aprenden sobre la amistad, empatía y autoestima durante la preadolescencia.",
+    "imagen": "IMG/el-club-limonada.jpg",
+    "linkLectura": "https://desafioleer.org",
+    "fuente": "https://www.loqueleo.com/ar/libro/el-club-limonada"
   },
   {
-    "titulo": "Charlie y la fábrica de chocolate",
-    "autor": "Roald Dahl",
-    "descripcion": "Una aventura mágica dentro de una excéntrica fábrica de dulces.",
-    "imagen": "IMG/charlie-fabrica.jpg",
-    "linkLectura": "#"
+    "titulo": "Florentino, el guardador de secretos",
+    "autor": "María Teresa Andruetto",
+    "año": 2025,
+    "descripcion": "Florentino vive en un pueblo donde todos le confían sus secretos. Un día, algo pone a prueba su legendaria discreción. Un cuento tierno sobre la confianza y el respeto a la intimidad.",
+    "imagen": "IMG/florentino.jpg",
+    "linkLectura": "https://juana.manso.edu.ar",
+    "fuente": "https://www.loqueleo.com/"
   },
   {
-    "titulo": "Coraline",
-    "autor": "Neil Gaiman",
-    "descripcion": "Una historia misteriosa y valiente sobre atravesar el miedo.",
-    "imagen": "IMG/portada.coraline.jpg",
-    "linkLectura": "#"
+    "titulo": "Hay espacio para todos",
+    "autor": "Anahí Flores",
+    "año": 2024,
+    "descripcion": "Con ilustraciones simples y mensaje poderoso, este álbum invita a reflexionar sobre la inclusión y la convivencia. Ideal para hablar sobre diversidad y empatía desde edades tempranas.",
+    "imagen": "IMG/hay-espacio.jpg",
+    "linkLectura": "https://www.educ.ar/recursos/159237",
+    "fuente": "https://www.pakapaka.gob.ar"
   },
   {
-    "titulo": "El diario de Ana Frank",
-    "autor": "Ana Frank",
-    "descripcion": "Una obra íntima y conmovedora escrita desde el encierro.",
-    "imagen": "IMG/diario-de-anne-frank.jpg",
-    "linkLectura": "#"
+    "titulo": "La doncella que quería el mar",
+    "autor": "Víctor Carvajal",
+    "año": 2025,
+    "descripcion": "Amaranta sueña con conocer el mar. Enfrenta pruebas y recibe ayuda mágica hasta llegar al océano, descubriendo su valentía. Una leyenda chilena sobre el viaje interior y la perseverancia.",
+    "imagen": "IMG/la-doncella.jpg",
+    "linkLectura": "https://www.bibliotecanacional.cl",
+    "fuente": "https://puentesdelectura.mendoza.edu.ar"
   },
   {
-    "titulo": "La invención de Morel",
-    "autor": "Adolfo Bioy Casares",
-    "descripcion": "Una novela filosófica y fantástica sobre el tiempo, la realidad y el amor.",
-    "imagen": "IMG/la-invencion-de-morel.jpg",
-    "linkLectura": "#"
+    "titulo": "Milagros: una osa extraordinaria",
+    "autor": "Hernán Garrido-Lecca",
+    "año": 2024,
+    "descripcion": "Milagros, una osa de anteojos que entiende el lenguaje humano, busca proteger su hogar en la selva peruana. Un relato con humor, acción y conciencia ecológica.",
+    "imagen": "IMG/milagros.jpg",
+    "linkLectura": "https://www.loqueleo.com/ar/libro/milagros",
+    "fuente": "https://bibliotecas.chaco.gob.ar"
+  },
+  {
+    "titulo": "Hola, Andrés, soy María… otra vez",
+    "autor": "María Fernanda Heredia",
+    "año": 2023,
+    "descripcion": "María, una niña enferma, entabla correspondencia con Andrés desde su casa. Una historia epistolar emotiva sobre la amistad, la soledad y la resiliencia.",
+    "imagen": "IMG/hola-andres.jpg",
+    "linkLectura": "https://www.loqueleo.com",
+    "fuente": "https://leerxleer.educ.ar"
+  },
+  {
+    "titulo": "Mi planta de naranja lima",
+    "autor": "José Mauro de Vasconcelos",
+    "año": 2022,
+    "descripcion": "Zezé, un niño pobre de Brasil, encuentra consuelo hablando con su planta. Un clásico de la literatura infantil sobre ternura, dolor y la imaginación como refugio.",
+    "imagen": "IMG/naranja-lima.jpg",
+    "linkLectura": "https://www.gutenberg.org/ebooks/38445",
+    "fuente": "https://www.argentina.gob.ar/educacion/libros-para-aprender"
   }
 ]

@@ -1120,6 +1120,43 @@ h2 {
   background: #da5c2b;
 }
 
+.botones-lectura {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-leer,
+.btn-fuente {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-leer {
+  background: linear-gradient(45deg, #ff69b4, #da5c2b);
+  color: white;
+}
+
+.btn-fuente {
+  background: linear-gradient(45deg, #8bfffb, #2274a5);
+  color: #1d1e33;
+}
+
+.btn-leer:hover,
+.btn-fuente:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffd97d;
+}
+
+
 /* Contenedor de todas las tarjetas de categoría */
 .biblioteca-grid {
   display: grid;

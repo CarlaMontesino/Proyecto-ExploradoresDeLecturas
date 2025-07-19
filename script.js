@@ -172,7 +172,6 @@ let slideIndex = 0;
 
 // Cargar JSON en la galería de cuentos, poesías y novelas
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const rutas = {
     'cuentos.html': { json: './cuentos.JSON', contenedor: 'cuentos-galeria' },
@@ -183,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const paginaActual = window.location.pathname.split('/').pop();
   const datos = rutas[paginaActual];
 
-  if (!datos) return; // Si no es una de las 3 páginas, no hace nada
+  if (!datos) return;
 
   cargarJSON(datos.json, datos.contenedor);
 });
@@ -201,13 +200,18 @@ function cargarJSON(url, idGaleria) {
       data.forEach(item => {
         const card = document.createElement('div');
         card.className = 'tarjeta-cuento';
+
         card.innerHTML = `
           <img src="${item.imagen}" alt="Portada de ${item.titulo}" class="portada">
           <h4>${item.titulo}</h4>
-          <p><strong>Autor:</strong> ${item.autor}</p>
+          <p><strong>Autor:</strong> ${item.autor} ${item.año ? `(${item.año})` : ''}</p>
           <p>${item.descripcion}</p>
-          <a href="${item.linkLectura}" class="btn-leer">📖 Leer</a>
+          <div class="botones-lectura">
+            <a href="${item.linkLectura}" class="btn-leer" target="_blank">📖 Leer</a>
+            ${item.fuente ? `<a href="${item.fuente}" class="btn-fuente" target="_blank">🔗 Fuente</a>` : ''}
+          </div>
         `;
+
         galeria.appendChild(card);
       });
     })
@@ -215,6 +219,7 @@ function cargarJSON(url, idGaleria) {
       console.error(`Error al cargar ${url}:`, error);
     });
 }
+
 
 
 

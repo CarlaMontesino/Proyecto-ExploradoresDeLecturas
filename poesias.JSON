@@ -1,23 +1,92 @@
 [
   {
-    "titulo": "Dice la lluvia",
-    "autor": "Mar Benegas",
-    "descripcion": "Una poesía contemporánea que invita a escuchar la naturaleza.",
-    "imagen": "IMG/dice-la-lluvia.webp",
-    "linkLectura": "#"
+    "titulo": "Al aire libre",
+    "autor": "Canela",
+    "año": 2022,
+    "descripcion": "Poema breve que celebra la naturaleza, ideal para nivel inicial. Invita a los niños a sentir el viento y el sol con los sentidos despiertos.",
+    "imagen": "IMG/al-aire-libre.jpg",
+    "linkLectura": "https://continuemosestudiando.abc.gob.ar/poema-animado-al-aire-libre",
+    "fuente": "https://www.educ.ar/recursos"
   },
   {
-    "titulo": "Te doy una canción",
-    "autor": "Silvio Rodríguez",
-    "descripcion": "Versos que celebran el poder de las palabras como regalo.",
-    "imagen": "IMG/te-doy-una-cancion.webp",
-    "linkLectura": "#"
+    "titulo": "Bañar un elefante",
+    "autor": "Elsa Bornemann",
+    "año": 2022,
+    "descripcion": "Poema humorístico que describe instrucciones absurdas para bañar a un elefante. Favorece el juego verbal y la producción creativa.",
+    "imagen": "IMG/banar-elefante.jpg",
+    "linkLectura": "https://continuemosestudiando.abc.gob.ar/poemas/banar-un-elefante",
+    "fuente": "https://www.educ.ar/recursos"
   },
   {
-    "titulo": "Romance sonámbulo",
+    "titulo": "El gallo azul",
+    "autor": "María Cristina Ramos",
+    "año": 2022,
+    "descripcion": "Un gallo azul canta a la madrugada para pintar la mañana de luz. Poema con musicalidad e imágenes mágicas para explorar el amanecer.",
+    "imagen": "IMG/el-gallo-azul.jpg",
+    "linkLectura": "https://continuemosestudiando.abc.gob.ar/poemas/el-gallo-azul",
+    "fuente": "https://www.educ.ar/recursos"
+  },
+  {
+    "titulo": "La luna",
+    "autor": "Frida Schultz de Mantovani",
+    "año": 2022,
+    "descripcion": "Poema de cuna que personifica a la luna como una amiga protectora. Versos suaves y repetitivos ideales para iniciación poética.",
+    "imagen": "IMG/la-luna.jpg",
+    "linkLectura": "https://continuemosestudiando.abc.gob.ar/poemas/la-luna",
+    "fuente": "https://www.educ.ar/recursos"
+  },
+  {
+    "titulo": "Como la cigarra",
+    "autor": "María Elena Walsh",
+    "año": 1972,
+    "descripcion": "Poema-canción icónica sobre la resiliencia. La cigarra resurge con esperanza tras muchas dificultades. Una obra que trasciende generaciones.",
+    "imagen": "IMG/como-la-cigarra.jpg",
+    "linkLectura": "https://educ.ar/recursos/como-la-cigarra",
+    "fuente": "https://educ.ar"
+  },
+  {
+    "titulo": "La vaca estudiosa",
+    "autor": "María Elena Walsh",
+    "año": 1970,
+    "descripcion": "Divertido poema sobre una vaca que va a la escuela. Rima, humor y una historia inolvidable sobre el deseo de aprender.",
+    "imagen": "IMG/la-vaca-estudiosa.jpg",
+    "linkLectura": "https://www.poemas-del-alma.com/la-vaca-estudiosa.htm",
+    "fuente": "https://poemas-del-alma.com"
+  },
+  {
+    "titulo": "La casa de la jirafa",
+    "autor": "Liliana Cinetto",
+    "año": 2022,
+    "descripcion": "Poema que describe casas imaginarias de animales con humor y creatividad. Ideal para jugar con rimas y ciencias.",
+    "imagen": "IMG/la-casa-de-la-jirafa.jpg",
+    "linkLectura": "https://bibliopoemes.blogspot.com/poema-la-casa",
+    "fuente": "https://bibliopoemes.blogspot.com"
+  },
+  {
+    "titulo": "Había un caldero lleno…",
+    "autor": "Cecilia Pisos",
+    "año": 2022,
+    "descripcion": "Poema rítmico sobre ingredientes mágicos y calderos de brujas. Ideal para Halloween y juegos de escritura rimada.",
+    "imagen": "IMG/habia-un-caldero.jpg",
+    "linkLectura": "https://buenosaires.gob.ar/anuario-poesia",
+    "fuente": "https://www.buenosaires.gob.ar"
+  },
+  {
+    "titulo": "El lagarto está llorando",
     "autor": "Federico García Lorca",
-    "descripcion": "Imágenes potentes, colores y símbolos en una poesía vibrante.",
-    "imagen": "IMG/romance-sonambulo.webp",
-    "linkLectura": "#"
+    "año": 1931,
+    "descripcion": "Poema breve y tierno sobre dos lagartos enamorados que lloran su desdicha. Rima, ternura y ritmo cadencioso en un clásico universal.",
+    "imagen": "IMG/lagarto-llorando.jpg",
+    "linkLectura": "https://materiales.haciendoescuela.com/poemas/el-lagarto",
+    "fuente": "https://materiales.haciendoescuela.com"
+  },
+  {
+    "titulo": "La muralla",
+    "autor": "Nicolás Guillén",
+    "año": 1952,
+    "descripcion": "Poema-manifiesto que defiende la unión de los pueblos. Usa imágenes de puertas y murallas para simbolizar valores colectivos.",
+    "imagen": "IMG/la-muralla.jpg",
+    "linkLectura": "https://recursos.educ.ar/poemas/la-muralla",
+    "fuente": "https://www.educ.ar"
   }
 ]
