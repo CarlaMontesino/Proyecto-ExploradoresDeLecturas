@@ -277,56 +277,97 @@ header {
   transform: scale(1.2);
 }
 
-/* ----------------------------------------------
-  FOOTER
+/* FOOTER
 ----------------------------------------------- */
 footer {
   background-color: var(--fondo-oscuro);
-  padding: 1rem;
-  text-align: center;
-  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  color: var(--ucla-blue);
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+.footer-content h3,
+.footer-content h4 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--dogwood-rose); /* Título en rosa neón */
+  margin-bottom: 0.5rem;
+}
+
+.footer-content p,
+.footer-content li {
+  margin: 0.3rem 0;
+  line-height: 1.4;
   color: var(--ucla-blue);
 }
 
-footer a {
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content a {
   color: var(--orange-pantone);
-  margin: 0 0.5rem;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-footer a:hover {
+.footer-content a:hover {
   text-decoration: underline;
+  color: var(--emerald); /* efecto hover con otro color de la paleta */
 }
 
-/* ----------------------------------------------
-  MEDIAQUERIES ESPECÍFICOS MÓVIL + TABLET
------------------------------------------------ */
-@media (max-width: 480px) {
-  body {
-    font-size: 16px;
+.footer-content > div {
+  flex: 1 1 150px;
+  min-width: 200px;
+}
+
+.footer-contacto i {
+  color: var(--rosa-dogwood);
+  margin-right: 0.5rem;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* RESPONSIVE FOOTER */
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content > div {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .footer-content ul {
+    padding-left: 0;
   }
 }
 
-@media (min-width: 481px) and (max-width: 850px) {
-  body {
-    font-size: 17px;
-  }
-}
 
-@media (min-width: 851px) {
-  body {
-    font-size: 18px;
-  }
-  .nav-principal {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .nav-principal a {
-    display: inline-block;
-  }
-}
 
 /* ----------------------------------------------
   SECCIONES INTERACTIVAS: juegos, tarjetas, formularios, diálogo Lumi
