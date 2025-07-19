@@ -4,43 +4,25 @@
     "autor": "María Fernanda Heredia",
     "año": 2024,
     "descripcion": "Tres amigos fundan un club para superar la 'mala suerte en el amor'. Con humor y complicidad, aprenden sobre la amistad, empatía y autoestima durante la preadolescencia.",
-    "imagen": "IMG/el-club-limonada.jpg",
+    "imagen": "IMG/el-club-de-la-limonada.svg",
     "linkLectura": "https://desafioleer.org",
     "fuente": "https://www.loqueleo.com/ar/libro/el-club-limonada"
-  },
-  {
-    "titulo": "Florentino, el guardador de secretos",
-    "autor": "María Teresa Andruetto",
-    "año": 2025,
-    "descripcion": "Florentino vive en un pueblo donde todos le confían sus secretos. Un día, algo pone a prueba su legendaria discreción. Un cuento tierno sobre la confianza y el respeto a la intimidad.",
-    "imagen": "IMG/florentino.jpg",
-    "linkLectura": "https://juana.manso.edu.ar",
-    "fuente": "https://www.loqueleo.com/"
   },
   {
     "titulo": "Hay espacio para todos",
     "autor": "Anahí Flores",
     "año": 2024,
     "descripcion": "Con ilustraciones simples y mensaje poderoso, este álbum invita a reflexionar sobre la inclusión y la convivencia. Ideal para hablar sobre diversidad y empatía desde edades tempranas.",
-    "imagen": "IMG/hay-espacio.jpg",
+    "imagen": "IMG/hay-espacio-para-todos.svg",
     "linkLectura": "https://www.educ.ar/recursos/159237",
     "fuente": "https://www.pakapaka.gob.ar"
-  },
-  {
-    "titulo": "La doncella que quería el mar",
-    "autor": "Víctor Carvajal",
-    "año": 2025,
-    "descripcion": "Amaranta sueña con conocer el mar. Enfrenta pruebas y recibe ayuda mágica hasta llegar al océano, descubriendo su valentía. Una leyenda chilena sobre el viaje interior y la perseverancia.",
-    "imagen": "IMG/la-doncella.jpg",
-    "linkLectura": "https://www.bibliotecanacional.cl",
-    "fuente": "https://puentesdelectura.mendoza.edu.ar"
   },
   {
     "titulo": "Milagros: una osa extraordinaria",
     "autor": "Hernán Garrido-Lecca",
     "año": 2024,
     "descripcion": "Milagros, una osa de anteojos que entiende el lenguaje humano, busca proteger su hogar en la selva peruana. Un relato con humor, acción y conciencia ecológica.",
-    "imagen": "IMG/milagros.jpg",
+    "imagen": "IMG/milagros-una-osa-extraordinaria.svg",
     "linkLectura": "https://www.loqueleo.com/ar/libro/milagros",
     "fuente": "https://bibliotecas.chaco.gob.ar"
   },
@@ -49,7 +31,7 @@
     "autor": "María Fernanda Heredia",
     "año": 2023,
     "descripcion": "María, una niña enferma, entabla correspondencia con Andrés desde su casa. Una historia epistolar emotiva sobre la amistad, la soledad y la resiliencia.",
-    "imagen": "IMG/hola-andres.jpg",
+    "imagen": "IMG/hola-andres.svg",
     "linkLectura": "https://www.loqueleo.com",
     "fuente": "https://leerxleer.educ.ar"
   },
@@ -58,7 +40,7 @@
     "autor": "José Mauro de Vasconcelos",
     "año": 2022,
     "descripcion": "Zezé, un niño pobre de Brasil, encuentra consuelo hablando con su planta. Un clásico de la literatura infantil sobre ternura, dolor y la imaginación como refugio.",
-    "imagen": "IMG/naranja-lima.jpg",
+    "imagen": "IMG/mi-planta-de-naranja-lima.svg",
     "linkLectura": "https://www.gutenberg.org/ebooks/38445",
     "fuente": "https://www.argentina.gob.ar/educacion/libros-para-aprender"
   }
