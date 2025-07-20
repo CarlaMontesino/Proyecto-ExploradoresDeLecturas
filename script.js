@@ -42,18 +42,28 @@ document.addEventListener('click', function (event) {
 
 //Formulario de contacto
 
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('formContacto');
-  const mensajeExito = document.getElementById('mensaje-exito');
-  if(form){
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      mensajeExito.textContent = "¡Gracias por tu mensaje! Te responderemos pronto 😊";
-      form.reset();
-      setTimeout(()=>mensajeExito.textContent = "", 4000);
-    });
-  }
-});
+
+
+<script>
+  // Inicializa EmailJS
+  emailjs.init('ZhGa0E1U_tiY1jQ-6');
+
+  // Maneja el envío del formulario
+  document.getElementById('formContacto').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Envía los datos a EmailJS
+    emailjs.sendForm('service_c7erjwi', 'template_3ny474h', this)
+      .then(function () {
+        document.getElementById('mensaje-exito').textContent = '¡Gracias por tu mensaje! Te responderemos pronto 😊';
+        document.getElementById('formContacto').reset();
+      }, function (error) {
+        document.getElementById('mensaje-exito').textContent = 'Ups, hubo un error al enviar. Intentá nuevamente.';
+        console.error('EmailJS error:', error);
+      });
+  });
+</script>
+
 
 
 // Cargar cuentos desde el archivo JSON al cargar la página
@@ -73,72 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(error => console.error('Error al cargar los cuentos:', error));
 });
 
-/*
-// Función para renderizar la galería
-function mostrarCuentos(cuentos, galeria) {
-  cuentos.forEach(cuento => {
-    const card = document.createElement('div');
-    card.className = 'tarjeta-cuento';
-    card.innerHTML = `
-      <img src="${cuento.imagen}" alt="Portada de ${cuento.titulo}">
-      <h4>${cuento.titulo}</h4>
-      <p><strong>Autor:</strong> ${cuento.autor}</p>
-      <p>${cuento.descripcion}</p>
-    `;
-    galeria.appendChild(card);
-  });
-}
-
-// poesias
-
-document.addEventListener('DOMContentLoaded', () => {
-  const galeria = document.getElementById('galeria-poesias');
-  if (!galeria) return;
-
-  fetch('./poesias.json')
-    .then(response => response.json())
-    .then(data => {
-      data.forEach(poesia => {
-        const card = document.createElement('div');
-        card.className = 'tarjeta-cuento'; // 
-        card.innerHTML = `
-          <img src="${poesia.imagen}" alt="Imagen de ${poesia.titulo}">
-          <h4>${poesia.titulo}</h4>
-          <p><strong>Autor:</strong> ${poesia.autor}</p>
-          <p>${poesia.descripcion}</p>
-        `;
-        galeria.appendChild(card);
-      });
-    })
-    .catch(error => {
-      console.error('Error al cargar las poesías:', error);
-    });
-});
-
-
-// novelas
-
-document.addEventListener('DOMContentLoaded', () => {
-  const galeria = document.getElementById('galeria-novelas');
-  if (!galeria) return;
-
-  fetch('./novelas.json')
-    .then(response => response.json())
-    .then(data => {
-      data.forEach(novela => {
-        const card = document.createElement('div');
-        card.className = 'tarjeta-cuento';
-        card.innerHTML = `
-          <img src="${novela.imagen}" alt="Portada de ${novela.titulo}">
-          <h4>${novela.titulo}</h4>
-          <p><strong>Autor:</strong> ${novela.autor}</p>
-          <p>${novela.descripcion}</p>
-        `;
-        galeria.appendChild(card);
-      });
-    })
-    .catch(error => console.error('Error al cargar las novelas:', error));
-}); */
 
 // Carrousel de imágenes index
 
