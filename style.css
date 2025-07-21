@@ -521,6 +521,27 @@ footer {
   to { opacity: 1; transform: scale(1); }
 }
 
+.mensaje-exito {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #8BFFFB; /* azul eléctrico */
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  border-radius: 12px;
+  text-shadow: 0 0 5px #8BFFFB;
+  border: 1px solid #8BFFFB;
+  animation: fadeInScale 0.6s ease forwards;
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 /* Diálogo Lumi */
 

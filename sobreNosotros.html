@@ -84,26 +84,28 @@
         </div>
     </section>
 
-    <section class="contacto-section">
-      <div class="form-contacto">
-         <h2>¿Querés contactarnos?</h2>
-          <img src="IMG/LumiSaludando.png" alt="Lumi saludando" />
-          <p>Si tenés alguna consulta, sugerencia o simplemente querés saludar, ¡escribinos!</p>
-            <form class="form-contacto" id="formContacto" autocomplete="off">
-             <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    <section class="contacto-section"> 
+  <div class="form-contacto">
+    <h2>¿Querés contactarnos?</h2>
+    <img src="IMG/LumiSaludando.png" alt="Lumi saludando" />
+    <p>Si tenés alguna consulta, sugerencia o simplemente querés saludar, ¡escribinos!</p>
 
-              <label for="email">Correo electrónico</label>
-              <input type="email" id="email" name="email" placeholder="ejemplo@mail.com" required>
+    <form class="form-contacto" id="formContacto" autocomplete="off">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" placeholder="Tu nombre" required>
 
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta, sugerencia o saludo..." required></textarea>
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@mail.com" required>
 
-             <button type="submit">Enviar</button>
-              <div id="mensaje-exito" class="mensaje-exito"></div>
-            </form>
-      </div>
-    </section>
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="4" placeholder="Escribí tu consulta, sugerencia o saludo..." required></textarea>
+
+      <button type="submit">Enviar</button>
+      <div id="mensaje-exito" class="mensaje-exito"></div>
+    </form>
+  </div>
+</section>
+
     
     <br>
      <footer class="footer">
@@ -149,6 +151,8 @@
   <!-- SDK de EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./script.js"></script>
+
+  <audio id="sonidoCheck" src="./Sonidos/Mouse-Click-00-c-FesliyanStudios.com.mp3" preload="auto"></audio>
 
 </body>
 </html>

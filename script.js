@@ -41,23 +41,28 @@ document.addEventListener('click', function (event) {
 });
 
 //Formulario de contacto
-// Inicializa EmailJS con tu usuario  
 emailjs.init('ZhGa0E1U_tiY1jQ-6');
 
-  // Maneja el envío del formulario
 document.getElementById('formContacto').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // Envía los datos a EmailJS
-    emailjs.sendForm('service_c7erjwi', 'template_3ny474h', this)
-      .then(function () {
-        document.getElementById('mensaje-exito').textContent = '¡Gracias por tu mensaje! Te responderemos pronto 😊';
-        document.getElementById('formContacto').reset();
-      }, function (error) {
-        document.getElementById('mensaje-exito').textContent = 'Ups, hubo un error al enviar. Intentá nuevamente.';
+    const form = this;
+    const mensaje = document.getElementById('mensaje-exito');
+    const sonido = document.getElementById('sonidoCheck');
+
+    emailjs.sendForm('service_c7erjwi', 'template_3ny474h', form)
+      .then(() => {
+        mensaje.textContent = '¡Gracias por tu mensaje! ✨';
+        mensaje.classList.add('mensaje-exito');
+        sonido.play(); // 🔊 Suena el "check"
+        form.reset();
+      }, (error) => {
+        mensaje.textContent = '❌ Ocurrió un error al enviar. Intentá nuevamente.';
         console.error('EmailJS error:', error);
       });
 });
+
+
 
 
 
