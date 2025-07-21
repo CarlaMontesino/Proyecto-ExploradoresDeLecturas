@@ -41,15 +41,11 @@ document.addEventListener('click', function (event) {
 });
 
 //Formulario de contacto
-
-
-
-<script>
-  // Inicializa EmailJS
-  emailjs.init('ZhGa0E1U_tiY1jQ-6');
+// Inicializa EmailJS con tu usuario  
+emailjs.init('ZhGa0E1U_tiY1jQ-6');
 
   // Maneja el envío del formulario
-  document.getElementById('formContacto').addEventListener('submit', function (e) {
+document.getElementById('formContacto').addEventListener('submit', function (e) {
     e.preventDefault();
 
     // Envía los datos a EmailJS
@@ -61,8 +57,8 @@ document.addEventListener('click', function (event) {
         document.getElementById('mensaje-exito').textContent = 'Ups, hubo un error al enviar. Intentá nuevamente.';
         console.error('EmailJS error:', error);
       });
-  });
-</script>
+});
+
 
 
 
