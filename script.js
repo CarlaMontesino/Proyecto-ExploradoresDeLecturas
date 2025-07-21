@@ -40,50 +40,6 @@ document.addEventListener('click', function (event) {
   }
 });
 
-//Formulario de contacto
-emailjs.init('ZhGa0E1U_tiY1jQ-6');
-
-document.getElementById('formContacto').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const form = this;
-    const mensaje = document.getElementById('mensaje-exito');
-    const sonido = document.getElementById('sonidoCheck');
-
-    emailjs.sendForm('service_c7erjwi', 'template_3ny474h', form)
-      .then(() => {
-        mensaje.textContent = '¡Gracias por tu mensaje! ✨';
-        mensaje.classList.add('mensaje-exito');
-        sonido.play(); // 🔊 Suena el "check"
-        form.reset();
-      }, (error) => {
-        mensaje.textContent = '❌ Ocurrió un error al enviar. Intentá nuevamente.';
-        console.error('EmailJS error:', error);
-      });
-});
-
-
-
-
-
-
-// Cargar cuentos desde el archivo JSON al cargar la página
-
-document.addEventListener('DOMContentLoaded', () => {
-  const galeria = document.getElementById('cuentos-galeria');
-  if (!galeria) return;
-
-  fetch('./cuentos.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Error al cargar el archivo JSON');
-      }
-      return response.json();
-    })
-    .then(data => mostrarCuentos(data, galeria))
-    .catch(error => console.error('Error al cargar los cuentos:', error));
-});
-
 
 // Carrousel de imágenes index
 
@@ -115,55 +71,7 @@ let slideIndex = 0;
   setInterval(avanzarSlide, 5000);
 
 
-// Cargar JSON en la galería de cuentos, poesías y novelas
 
-document.addEventListener('DOMContentLoaded', () => {
-  const rutas = {
-    'cuentos.html': { json: './cuentos.JSON', contenedor: 'cuentos-galeria' },
-    'novelas.html': { json: './novelas.JSON', contenedor: 'novelas-galeria' },
-    'poesias.html': { json: './poesias.JSON', contenedor: 'poesias-galeria' }
-  };
-
-  const paginaActual = window.location.pathname.split('/').pop();
-  const datos = rutas[paginaActual];
-
-  if (!datos) return;
-
-  cargarJSON(datos.json, datos.contenedor);
-});
-
-function cargarJSON(url, idGaleria) {
-  const galeria = document.getElementById(idGaleria);
-  if (!galeria) return;
-
-  fetch(url)
-    .then(response => {
-      if (!response.ok) throw new Error(`HTTP error ${response.status}`);
-      return response.json();
-    })
-    .then(data => {
-      data.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'tarjeta-cuento';
-
-        card.innerHTML = `
-          <img src="${item.imagen}" alt="Portada de ${item.titulo}" class="portada">
-          <h4>${item.titulo}</h4>
-          <p><strong>Autor:</strong> ${item.autor} ${item.año ? `(${item.año})` : ''}</p>
-          <p>${item.descripcion}</p>
-          <div class="botones-lectura">
-            <a href="${item.linkLectura}" class="btn-leer" target="_blank">📖 Leer</a>
-            ${item.fuente ? `<a href="${item.fuente}" class="btn-fuente" target="_blank">🔗 Fuente</a>` : ''}
-          </div>
-        `;
-
-        galeria.appendChild(card);
-      });
-    })
-    .catch(error => {
-      console.error(`Error al cargar ${url}:`, error);
-    });
-}
 
 
 
